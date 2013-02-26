@@ -11,8 +11,17 @@ GIT
   specs:
     rvm (0.9.0)
 
+GIT
+  remote: https://github.com/jeroenj/chef-elephant
+  ref: master
+  sha: dadbdcc9b3f60e52a3dadee2db8a9db78af96e02
+  specs:
+    elephant (0.0.1)
+      dmg (>= 0.0.0)
+
 DEPENDENCIES
   dmg (>= 0)
+  elephant (>= 0)
   homebrew (>= 0)
   rvm (>= 0)
 
