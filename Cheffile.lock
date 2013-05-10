@@ -21,10 +21,18 @@ GIT
     elephant (0.0.1)
       dmg (>= 0.0.0)
 
+GIT
+  remote: https://github.com/jtimberman/mac_os_x-cookbook.git
+  ref: master
+  sha: 5055975f967e4fcc4c5d733a5bc6257e3adbff2c
+  specs:
+    mac_os_x (1.4.2)
+
 DEPENDENCIES
   dmg (>= 0)
   elephant (>= 0)
   homebrew (>= 0)
+  mac_os_x (>= 0)
   rvm (>= 0)
   xquartz (>= 0)
 
