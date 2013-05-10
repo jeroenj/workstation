@@ -1,10 +1,10 @@
-site "http://community.opscode.com/api/v1"
+site 'http://community.opscode.com/api/v1'
 
-cookbook "dmg"
-cookbook "homebrew"
-cookbook "rvm",
-  :git => "https://github.com/fnichol/chef-rvm",
-  :ref => "v0.9.0"
+cookbook 'dmg'
+cookbook 'homebrew'
+cookbook 'rvm',
+  :git => 'https://github.com/fnichol/chef-rvm',
+  :ref => 'v0.9.0'
 
-cookbook "elephant",
-  :git => "https://github.com/jeroenj/chef-elephant"
+cookbook 'elephant',
+  :git => 'https://github.com/jeroenj/chef-elephant'
