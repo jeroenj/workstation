@@ -5,6 +5,7 @@ cookbook 'homebrew'
 cookbook 'rvm',
   :git => 'https://github.com/fnichol/chef-rvm',
   :ref => 'v0.9.0'
+cookbook 'xquartz'
 
 cookbook 'elephant',
   :git => 'https://github.com/jeroenj/chef-elephant'

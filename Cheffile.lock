@@ -3,6 +3,8 @@ SITE
   specs:
     dmg (1.1.0)
     homebrew (1.3.2)
+    xquartz (1.0.0)
+      dmg (~> 1.1)
 
 GIT
   remote: https://github.com/fnichol/chef-rvm
@@ -24,4 +26,5 @@ DEPENDENCIES
   elephant (>= 0)
   homebrew (>= 0)
   rvm (>= 0)
+  xquartz (>= 0)
 
