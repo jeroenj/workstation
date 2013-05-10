@@ -1,4 +1,4 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "chef"
-gem "librarian"
+gem 'chef'
+gem 'librarian'
