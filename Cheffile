@@ -4,9 +4,7 @@ cookbook 'dmg'
 cookbook 'homebrew'
 cookbook 'mac_os_x',
   :git => 'https://github.com/jtimberman/mac_os_x-cookbook.git'
-cookbook 'rvm',
-  :git => 'https://github.com/fnichol/chef-rvm',
-  :ref => 'v0.9.0'
+cookbook 'ruby_build'
 cookbook 'xquartz'
 
 cookbook 'elephant',
