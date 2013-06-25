@@ -3,7 +3,6 @@ SITE
   specs:
     dmg (1.1.0)
     homebrew (1.3.2)
-    ruby_build (0.8.0)
     xquartz (1.0.0)
       dmg (~> 1.1)
 
