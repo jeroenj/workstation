@@ -1,0 +1,62 @@
+{
+  "name": "development",
+  "run_list": [
+    "recipe[elephant::calendar]",
+    "recipe[elephant::finder]",
+    "recipe[elephant::firewall]",
+    "recipe[elephant::itunes]",
+    "recipe[elephant::mail]",
+    "recipe[elephant::safari]",
+    "recipe[elephant::terminal]",
+
+    "recipe[elephant::1password]",
+    "recipe[elephant::alfred]",
+    "recipe[elephant::appcleaner]",
+    "recipe[elephant::archiver]",
+    "recipe[elephant::beid]",
+    "recipe[elephant::chrome]",
+    "recipe[elephant::divvy]",
+    "recipe[elephant::doxie]",
+    "recipe[elephant::drobo]",
+    "recipe[elephant::dropbox]",
+    "recipe[elephant::gitx]",
+    "recipe[elephant::hipchat]",
+    "recipe[elephant::jubler]",
+    "recipe[elephant::reeder]",
+    "recipe[elephant::sequel_pro]",
+    "recipe[elephant::skype]",
+    "recipe[elephant::sublime_text]",
+    "recipe[elephant::toggl]",
+    "recipe[elephant::virtualbox]",
+    "recipe[elephant::vlc]"
+  ],
+  "default_attributes": {
+    "elephant": {
+      "settings": {
+        "homebrew": {
+          "packages": [
+            "ack",
+            "elasticsearch",
+            "git",
+            "imagemagick",
+            "mariadb",
+            "mongodb",
+            "node",
+            "par2",
+            "phantomjs",
+            "plowshare",
+            "redis",
+            "tree",
+            "unrar",
+            "wget",
+            "whois",
+            "zsh"
+          ]
+        }
+      }
+    }
+  },
+
+  "chef_type": "role",
+  "json_class": "Chef::Role"
+}
