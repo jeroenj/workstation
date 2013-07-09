@@ -2,7 +2,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     archive-tar-minitar (0.5.2)
-    chef (11.4.4)
+    chef (11.4.0)
       erubis
       highline (>= 1.6.9)
       json (>= 1.4.4, <= 1.7.7)
@@ -17,7 +17,7 @@ GEM
       rest-client (>= 1.0.4, < 1.7.0)
       yajl-ruby (~> 1.1)
     erubis (2.7.0)
-    highline (1.6.18)
+    highline (1.6.19)
     ipaddress (0.8.0)
     json (1.7.7)
     librarian (0.1.0)
@@ -58,5 +58,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  chef
+  chef (= 11.4.0)
   librarian-chef
