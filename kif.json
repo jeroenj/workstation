@@ -1,0 +1,19 @@
+{
+  "run_list": [
+    "role[default]",
+    "role[development]",
+
+    // "recipe[elephant::screens_connect]"
+    // "recipe[elephant::undercover]"
+
+    "recipe[elephant::settings]"
+  ],
+  "elephant": {
+    "hostname": "Kif",
+    "settings": {
+      "virtualbox": {
+        "NSNavLastRootDirectory": "/Volumes/Data/VMs"
+      }
+    }
+  }
+}

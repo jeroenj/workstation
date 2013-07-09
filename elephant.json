@@ -1,0 +1,11 @@
+{
+  "run_list": [
+    "role[default]",
+    "role[development]",
+
+    "recipe[elephant::settings]"
+  ],
+  "elephant": {
+    "hostname": "Elephant"
+  }
+}
