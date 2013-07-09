@@ -1,0 +1,24 @@
+{
+  "name": "default",
+  "run_list": [
+    "recipe[xquartz]",
+    "recipe[homebrew]",
+    "recipe[elephant::brew]",
+
+    "recipe[elephant::system]",
+    "recipe[elephant::hostname]",
+
+    "recipe[elephant::git]",
+    "recipe[elephant::ssh]",
+
+    "recipe[elephant::oh_my_zsh]",
+    "recipe[elephant::vim]",
+    "recipe[elephant::pow]",
+    "recipe[elephant::ruby]",
+
+    "recipe[elephant::java]"
+  ],
+
+  "chef_type": "role",
+  "json_class": "Chef::Role"
+}
