@@ -15,6 +15,7 @@
     "recipe[elephant::archiver]",
     "recipe[elephant::beid]",
     "recipe[elephant::chrome]",
+    "recipe[elephant::cord]",
     "recipe[elephant::dash]",
     "recipe[elephant::divvy]",
     "recipe[elephant::doxie]",
