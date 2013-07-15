@@ -1,0 +1,39 @@
+{
+  "run_list": [
+    "role[default]",
+
+    "recipe[elephant::calendar]",
+    "recipe[elephant::finder]",
+    "recipe[elephant::firewall]",
+    "recipe[elephant::itunes]",
+    "recipe[elephant::mail]",
+    "recipe[elephant::safari]",
+    "recipe[elephant::terminal]",
+
+    "recipe[elephant::alfred]",
+    "recipe[elephant::drobo]",
+    "recipe[elephant::dropbox]",
+    "recipe[elephant::logitech_harmony]",
+    "recipe[elephant::vlc]",
+
+    "recipe[elephant::settings]"
+  ],
+  "elephant": {
+    "hostname": "Bender",
+    "settings": {
+      "homebrew": {
+        "packages": [
+          "ack",
+          "git",
+          "par2",
+          "plowshare",
+          "tree",
+          "unrar",
+          "wget",
+          "whois",
+          "zsh"
+        ]
+      }
+    }
+  }
+}
