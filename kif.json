@@ -9,11 +9,6 @@
     "recipe[elephant::settings]"
   ],
   "elephant": {
-    "hostname": "Kif",
-    "settings": {
-      "virtualbox": {
-        "NSNavLastRootDirectory": "/Volumes/Data/VMs"
-      }
-    }
+    "hostname": "Kif"
   }
 }
