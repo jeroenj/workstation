@@ -14,6 +14,7 @@
     "recipe[elephant::appcleaner]",
     "recipe[elephant::archiver]",
     "recipe[elephant::beid]",
+    "recipe[elephant::charles]",
     "recipe[elephant::chrome]",
     "recipe[elephant::cloudapp]",
     "recipe[elephant::cord]",
