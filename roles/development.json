@@ -32,6 +32,7 @@
     "recipe[elephant::reeder]",
     "recipe[elephant::sequel_pro]",
     "recipe[elephant::skype]",
+    "recipe[elephant::spotify]",
     "recipe[elephant::sublime_text]",
     "recipe[elephant::toggl]",
     "recipe[elephant::vagrant]",
