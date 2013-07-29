@@ -29,6 +29,7 @@
     "recipe[elephant::hipchat]",
     "recipe[elephant::jubler]",
     "recipe[elephant::logitech_harmony]",
+    "recipe[elephant::max]",
     "recipe[elephant::reeder]",
     "recipe[elephant::sabnzbd]",
     "recipe[elephant::sequel_pro]",
