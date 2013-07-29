@@ -15,7 +15,7 @@
     "recipe[elephant::dropbox]",
     "recipe[elephant::handbrake]",
     "recipe[elephant::logitech_harmony]",
-    "recipe[elephant::sabnzbdplus]",
+    "recipe[elephant::sabnzbd]",
     "recipe[elephant::vlc]",
 
     "recipe[elephant::settings]"

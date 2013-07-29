@@ -30,7 +30,7 @@
     "recipe[elephant::jubler]",
     "recipe[elephant::logitech_harmony]",
     "recipe[elephant::reeder]",
-    "recipe[elephant::sabnzbdplus]",
+    "recipe[elephant::sabnzbd]",
     "recipe[elephant::sequel_pro]",
     "recipe[elephant::skype]",
     "recipe[elephant::spotify]",
