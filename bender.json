@@ -36,6 +36,11 @@
           "zsh"
         ]
       }
+    },
+    "sabnzbd": {
+      "preferences": {
+        "https": 1
+      }
     }
   }
 }
