@@ -57,6 +57,7 @@
             "phantomjs",
             "plowshare",
             "redis",
+            "tig",
             "tree",
             "unrar",
             "wget",
