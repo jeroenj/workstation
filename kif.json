@@ -4,7 +4,6 @@
     "role[development]",
 
     // "recipe[elephant::screens_connect]"
-    // "recipe[elephant::undercover]"
 
     "recipe[elephant::settings]"
   ],
