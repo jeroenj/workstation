@@ -31,6 +31,7 @@
     "recipe[elephant::kbc_business]",
     "recipe[elephant::logitech_harmony]",
     "recipe[elephant::max]",
+    "recipe[elephant::mou]",
     "recipe[elephant::reeder]",
     "recipe[elephant::sabnzbd]",
     "recipe[elephant::sequel_pro]",
