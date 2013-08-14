@@ -3,8 +3,8 @@ site 'http://community.opscode.com/api/v1'
 cookbook 'dmg'
 cookbook 'homebrew'
 cookbook 'mac_os_x',
-  :git => 'https://github.com/jtimberman/mac_os_x-cookbook.git'
+  :github => 'jtimberman/mac_os_x-cookbook'
 cookbook 'xquartz'
 
 cookbook 'elephant',
-  :git => 'https://github.com/jeroenj/chef-elephant'
+  :github => 'jeroenj/chef-elephant'

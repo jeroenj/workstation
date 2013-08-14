@@ -9,13 +9,15 @@ SITE
 GIT
   remote: https://github.com/jeroenj/chef-elephant
   ref: master
-  sha: dadbdcc9b3f60e52a3dadee2db8a9db78af96e02
+  sha: bbccdade4654e5ddc970cf73d6375a0985ae6d49
   specs:
     elephant (0.0.1)
       dmg (>= 0.0.0)
+      homebrew (>= 0.0.0)
+      mac_os_x (>= 0.0.0)
 
 GIT
-  remote: https://github.com/jtimberman/mac_os_x-cookbook.git
+  remote: https://github.com/jtimberman/mac_os_x-cookbook
   ref: master
   sha: 5055975f967e4fcc4c5d733a5bc6257e3adbff2c
   specs:
@@ -26,6 +28,5 @@ DEPENDENCIES
   elephant (>= 0)
   homebrew (>= 0)
   mac_os_x (>= 0)
-  ruby_build (>= 0)
   xquartz (>= 0)
 
