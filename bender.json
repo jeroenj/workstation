@@ -38,6 +38,12 @@
         ]
       }
     },
+    "ruby": {
+      "rubies": [
+        "2.0.0-p247"
+      ],
+      "default": "2.0.0"
+    },
     "sabnzbd": {
       "preferences": {
         "https": 1
