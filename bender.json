@@ -38,6 +38,9 @@
         ]
       }
     },
+    "oh_my_zsh": {
+      "projects_path": "~/apps"
+    }
     "ruby": {
       "rubies": [
         "2.0.0-p247"
