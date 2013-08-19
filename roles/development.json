@@ -20,6 +20,7 @@
     "recipe[elephant::chrome]",
     "recipe[elephant::cloudapp]",
     "recipe[elephant::cord]",
+    "recipe[elephant::cyberduck]",
     "recipe[elephant::dash]",
     "recipe[elephant::divvy]",
     "recipe[elephant::doxie]",
