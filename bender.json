@@ -12,7 +12,6 @@
 
     "recipe[elephant::alfred]",
     "recipe[elephant::drobo]",
-    "recipe[elephant::dropbox]",
     "recipe[elephant::handbrake]",
     "recipe[elephant::logitech_harmony]",
     "recipe[elephant::sabnzbd]",
