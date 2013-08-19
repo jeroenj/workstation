@@ -13,7 +13,6 @@
 
     "recipe[elephant::oh_my_zsh]",
     "recipe[elephant::vim]",
-    "recipe[elephant::pow]",
     "recipe[elephant::ruby]",
 
     "recipe[elephant::java]"

@@ -1,6 +1,8 @@
 {
   "name": "development",
   "run_list": [
+    "recipe[elephant::pow]",
+
     "recipe[elephant::calendar]",
     "recipe[elephant::finder]",
     "recipe[elephant::firewall]",
