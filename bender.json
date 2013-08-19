@@ -40,7 +40,8 @@
       }
     },
     "oh_my_zsh": {
-      "projects_path": "~/apps"
+      "projects_path": "~/apps",
+      "prompt_prefix": "Bender"
     },
     "ruby": {
       "rubies": [
