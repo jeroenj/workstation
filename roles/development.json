@@ -42,6 +42,7 @@
     "recipe[elephant::skype]",
     "recipe[elephant::spotify]",
     "recipe[elephant::sublime_text]",
+    "recipe[elephant::teamviewer]",
     "recipe[elephant::toggl]",
     "recipe[elephant::vagrant]",
     "recipe[elephant::virtualbox]",
