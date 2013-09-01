@@ -50,7 +50,13 @@
       "rubies": [
         "2.0.0-p247"
       ],
-      "default": "2.0.0"
+      "default": "2.0.0",
+      "gems": [
+        "bundler",
+        "cheat",
+        "colorful_json",
+        "pry"
+      ]
     },
     "sabnzbd": {
       "preferences": {
