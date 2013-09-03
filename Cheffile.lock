@@ -17,9 +17,9 @@ GIT
       mac_os_x (>= 0.0.0)
 
 GIT
-  remote: https://github.com/jtimberman/mac_os_x-cookbook
-  ref: master
-  sha: 5055975f967e4fcc4c5d733a5bc6257e3adbff2c
+  remote: https://github.com/jeroenj/mac_os_x-cookbook
+  ref: defaults-read
+  sha: 06bd8aaf9b94c365dfcf4e412ab51c51113a82fa
   specs:
     mac_os_x (1.4.2)
 
