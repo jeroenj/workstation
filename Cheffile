@@ -3,7 +3,7 @@ site 'http://community.opscode.com/api/v1'
 cookbook 'dmg'
 cookbook 'homebrew'
 cookbook 'mac_os_x',
-  :github => 'jeroenj/mac_os_x-cookbook', :ref => 'defaults-read'
+  :github => 'jtimberman/mac_os_x-cookbook'
 cookbook 'xquartz'
 
 cookbook 'elephant',
