@@ -1,6 +1,8 @@
 {
   "name": "default",
   "run_list": [
+    "recipe[elephant::data_bags]",
+
     "recipe[xquartz]",
     "recipe[homebrew]",
     "recipe[elephant::brew]",
