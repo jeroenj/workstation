@@ -57,11 +57,6 @@
         "colorful_json",
         "pry"
       ]
-    },
-    "sabnzbd": {
-      "preferences": {
-        "https": 1
-      }
     }
   }
 }
