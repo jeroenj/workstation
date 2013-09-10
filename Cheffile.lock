@@ -3,8 +3,6 @@ SITE
   specs:
     dmg (2.0.0)
     homebrew (1.4.0)
-    xquartz (1.0.0)
-      dmg (~> 1.1)
 
 GIT
   remote: https://github.com/jeroenj/chef-elephant
@@ -28,5 +26,4 @@ DEPENDENCIES
   elephant (>= 0)
   homebrew (>= 0)
   mac_os_x (>= 0)
-  xquartz (>= 0)
 

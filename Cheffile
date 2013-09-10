@@ -4,7 +4,6 @@ cookbook 'dmg'
 cookbook 'homebrew'
 cookbook 'mac_os_x',
   :github => 'jtimberman/mac_os_x-cookbook'
-cookbook 'xquartz'
 
 cookbook 'elephant',
   :github => 'jeroenj/chef-elephant'
