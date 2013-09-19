@@ -30,6 +30,7 @@
         "packages": [
           "ack",
           "git",
+          "git-extras",
           "par2",
           "plowshare",
           "pstree",

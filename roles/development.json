@@ -57,6 +57,7 @@
             "ack",
             "elasticsearch",
             "git",
+            "git-extras",
             "imagemagick",
             "mariadb",
             "mongodb",
