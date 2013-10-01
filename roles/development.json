@@ -45,6 +45,7 @@
     "recipe[elephant::sublime_text]",
     "recipe[elephant::teamviewer]",
     "recipe[elephant::toggl]",
+    "recipe[elephant::tunnelblick]",
     "recipe[elephant::vagrant]",
     "recipe[elephant::virtualbox]",
     "recipe[elephant::vlc]"
