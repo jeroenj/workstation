@@ -2,6 +2,7 @@
   "name": "development",
   "run_list": [
     "recipe[elephant::mariadb]",
+    "recipe[elephant::node]",
     "recipe[elephant::pow]",
 
     "recipe[elephant::calendar]",
@@ -62,7 +63,6 @@
             "git-extras",
             "imagemagick",
             "mongodb",
-            "node",
             "par2",
             "phantomjs",
             "plowshare",
