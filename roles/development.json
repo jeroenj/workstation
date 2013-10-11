@@ -1,6 +1,7 @@
 {
   "name": "development",
   "run_list": [
+    "recipe[elephant::logrotate]",
     "recipe[elephant::mariadb]",
     "recipe[elephant::node]",
     "recipe[elephant::pow]",
