@@ -39,7 +39,6 @@
     "recipe[elephant::max]",
     "recipe[elephant::mou]",
     "recipe[elephant::plex_media_center]",
-    "recipe[elephant::owncloud]",
     "recipe[elephant::reeder]",
     "recipe[elephant::sabnzbd]",
     "recipe[elephant::sequel_pro]",
