@@ -10,10 +10,9 @@
     "recipe[elephant::system]",
     "recipe[elephant::hostname]",
 
+    "recipe[elephant::oh_my_zsh]",
     "recipe[elephant::git]",
     "recipe[elephant::ssh]",
-
-    "recipe[elephant::oh_my_zsh]",
     "recipe[elephant::vim]",
     "recipe[elephant::ruby]",
 
