@@ -17,6 +17,7 @@
     "recipe[elephant::logitech_harmony]",
     "recipe[elephant::plex_media_center]",
     "recipe[elephant::plex_media_server]",
+    "recipe[elephant::rowmote_helper]",
     "recipe[elephant::sabnzbd]",
     "recipe[elephant::transmission]",
     "recipe[elephant::vlc]",
