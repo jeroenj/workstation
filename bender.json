@@ -54,7 +54,7 @@
       ],
       "default": "2.0.0",
       "gems": {
-        "bundler": null,
+        "bundler": "1.3.5",
         "cheat": null,
         "colorful_json": null,
         "pry": null
