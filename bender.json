@@ -53,12 +53,12 @@
         "2.0.0-p247"
       ],
       "default": "2.0.0",
-      "gems": [
-        "bundler",
-        "cheat",
-        "colorful_json",
-        "pry"
-      ]
+      "gems": {
+        "bundler": null,
+        "cheat": null,
+        "colorful_json": null,
+        "pry": null
+      }
     }
   }
 }
