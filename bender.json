@@ -19,6 +19,7 @@
     "recipe[elephant::plex_media_server]",
     "recipe[elephant::rowmote_helper]",
     "recipe[elephant::sabnzbd]",
+    "recipe[elephant::ssl]",
     "recipe[elephant::subliminal]",
     "recipe[elephant::transmission]",
     "recipe[elephant::vlc]",
