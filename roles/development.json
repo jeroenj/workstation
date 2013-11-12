@@ -54,28 +54,26 @@
   ],
   "default_attributes": {
     "elephant": {
-      "settings": {
-        "homebrew": {
-          "packages": [
-            "ack",
-            "elasticsearch",
-            "git",
-            "git-extras",
-            "imagemagick",
-            "mongodb",
-            "par2",
-            "phantomjs",
-            "plowshare",
-            "pstree",
-            "redis",
-            "tig",
-            "tree",
-            "unrar",
-            "wget",
-            "whois",
-            "zsh"
-          ]
-        }
+      "homebrew": {
+        "packages": [
+          "ack",
+          "elasticsearch",
+          "git",
+          "git-extras",
+          "imagemagick",
+          "mongodb",
+          "par2",
+          "phantomjs",
+          "plowshare",
+          "pstree",
+          "redis",
+          "tig",
+          "tree",
+          "unrar",
+          "wget",
+          "whois",
+          "zsh"
+        ]
       }
     }
   },

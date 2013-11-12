@@ -29,23 +29,21 @@
   "elephant": {
     "username": "jeroenjacobs",
     "hostname": "Bender",
-    "settings": {
-      "homebrew": {
-        "packages": [
-          "ack",
-          "git",
-          "git-extras",
-          "par2",
-          "plowshare",
-          "pstree",
-          "tig",
-          "tree",
-          "unrar",
-          "wget",
-          "whois",
-          "zsh"
-        ]
-      }
+    "homebrew": {
+      "packages": [
+        "ack",
+        "git",
+        "git-extras",
+        "par2",
+        "plowshare",
+        "pstree",
+        "tig",
+        "tree",
+        "unrar",
+        "wget",
+        "whois",
+        "zsh"
+      ]
     },
     "oh_my_zsh": {
       "projects_path": "~/apps",
