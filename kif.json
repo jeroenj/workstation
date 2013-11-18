@@ -3,8 +3,6 @@
     "role[default]",
     "role[development]",
 
-    // "recipe[elephant::screens_connect]"
-
     "recipe[elephant::settings]"
   ],
   "elephant": {
