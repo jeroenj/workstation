@@ -17,7 +17,7 @@ GIT
 GIT
   remote: https://github.com/jtimberman/mac_os_x-cookbook
   ref: master
-  sha: 3b078cfb40598954ce327b559e92cb8dfb0c7a5f
+  sha: b4c8ae8f6577f8c7a7021efb46d2824c42125421
   specs:
     mac_os_x (1.4.2)
 
