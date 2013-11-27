@@ -38,6 +38,7 @@
     "recipe[elephant::logitech_harmony]",
     "recipe[elephant::max]",
     "recipe[elephant::mou]",
+    "recipe[elephant::plex_home_theater]",
     "recipe[elephant::plex_media_center]",
     "recipe[elephant::reeder]",
     "recipe[elephant::sabnzbd]",
