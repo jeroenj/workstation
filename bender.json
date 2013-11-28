@@ -18,12 +18,16 @@
     "recipe[elephant::plex_home_theater]",
     "recipe[elephant::plex_media_center]",
     "recipe[elephant::plex_media_server]",
+    "recipe[elephant::plexconnect]",
+    "recipe[elephant::pureftpd]",
     "recipe[elephant::rowmote_helper]",
     "recipe[elephant::sabnzbd]",
+    "recipe[elephant::sickbeard]",
     "recipe[elephant::ssl]",
     "recipe[elephant::subliminal]",
     "recipe[elephant::transmission]",
     "recipe[elephant::vlc]",
+    "recipe[elephant::vpn]",
 
     "recipe[elephant::settings]"
   ],
