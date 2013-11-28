@@ -80,6 +80,16 @@
       }
     }
   },
+  "override_attributes": {
+    "elephant": {
+      "sabnzbd": {
+        "launch_agent": false
+      },
+      "transmission": {
+        "launch_agent": false
+      }
+    }
+  },
 
   "chef_type": "role",
   "json_class": "Chef::Role"
