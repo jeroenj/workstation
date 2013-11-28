@@ -18,6 +18,11 @@
 
     "recipe[elephant::java]"
   ],
+  "default_attributes": {
+    "elephant": {
+      "username": "jeroen"
+    }
+  },
 
   "chef_type": "role",
   "json_class": "Chef::Role"
