@@ -16,6 +16,7 @@
     "recipe[elephant::vim]",
     "recipe[elephant::ruby]",
 
+    "recipe[elephant::do_dyndns]",
     "recipe[elephant::java]"
   ],
   "default_attributes": {
