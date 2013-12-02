@@ -11,6 +11,7 @@
     "recipe[elephant::terminal]",
 
     "recipe[elephant::alfred]",
+    "recipe[elephant::couchpotato]",
     "recipe[elephant::cyberduck]",
     "recipe[elephant::drobo]",
     "recipe[elephant::handbrake]",
