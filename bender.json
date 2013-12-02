@@ -16,6 +16,7 @@
     "recipe[elephant::drobo]",
     "recipe[elephant::handbrake]",
     "recipe[elephant::logitech_harmony]",
+    "recipe[elephant::nginx]",
     "recipe[elephant::plex_home_theater]",
     "recipe[elephant::plex_media_center]",
     "recipe[elephant::plex_media_server]",
