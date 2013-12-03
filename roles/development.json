@@ -69,6 +69,7 @@
           "plowshare",
           "pstree",
           "redis",
+          "rsync",
           "tig",
           "tree",
           "unrar",

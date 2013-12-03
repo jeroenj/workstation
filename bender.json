@@ -43,6 +43,7 @@
         "git-extras",
         "par2",
         "pstree",
+        "rsync",
         "tig",
         "tree",
         "unrar",
