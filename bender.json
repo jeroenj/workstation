@@ -5,7 +5,6 @@
     "recipe[elephant::alfred]",
     "recipe[elephant::calendar]",
     "recipe[elephant::couchpotato]",
-    "recipe[elephant::cyberduck]",
     "recipe[elephant::drobo]",
     "recipe[elephant::finder]",
     "recipe[elephant::firewall]",
