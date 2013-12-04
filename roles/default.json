@@ -3,6 +3,8 @@
   "run_list": [
     "recipe[elephant::data_bags]",
 
+    "recipe[elephant::system]",
+    "recipe[elephant::xquartz]",
     "recipe[homebrew]",
 
     "recipe[elephant::brew]",
@@ -13,9 +15,7 @@
     "recipe[elephant::oh_my_zsh]",
     "recipe[elephant::ruby]",
     "recipe[elephant::ssh]",
-    "recipe[elephant::system]",
-    "recipe[elephant::vim]",
-    "recipe[elephant::xquartz]"
+    "recipe[elephant::vim]"
   ],
   "default_attributes": {
     "elephant": {
