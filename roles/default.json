@@ -3,21 +3,19 @@
   "run_list": [
     "recipe[elephant::data_bags]",
 
-    "recipe[elephant::xquartz]",
     "recipe[homebrew]",
+
     "recipe[elephant::brew]",
-
-    "recipe[elephant::system]",
-    "recipe[elephant::hostname]",
-
-    "recipe[elephant::oh_my_zsh]",
-    "recipe[elephant::git]",
-    "recipe[elephant::ssh]",
-    "recipe[elephant::vim]",
-    "recipe[elephant::ruby]",
-
     "recipe[elephant::do_dyndns]",
-    "recipe[elephant::java]"
+    "recipe[elephant::git]",
+    "recipe[elephant::hostname]",
+    "recipe[elephant::java]",
+    "recipe[elephant::oh_my_zsh]",
+    "recipe[elephant::ruby]",
+    "recipe[elephant::ssh]",
+    "recipe[elephant::system]",
+    "recipe[elephant::vim]",
+    "recipe[elephant::xquartz]"
   ],
   "default_attributes": {
     "elephant": {
