@@ -32,7 +32,6 @@
     "recipe[elephant::settings]"
   ],
   "elephant": {
-    "username": "jeroen",
     "hostname": "Bender",
     "homebrew": {
       "packages": [
