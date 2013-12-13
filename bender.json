@@ -25,6 +25,7 @@
     "recipe[elephant::ssl]",
     "recipe[elephant::subliminal]",
     "recipe[elephant::terminal]",
+    "recipe[elephant::time_machine]",
     "recipe[elephant::transmission]",
     "recipe[elephant::vlc]",
     "recipe[elephant::vpn]",
