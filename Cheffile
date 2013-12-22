@@ -1,6 +1,7 @@
 site 'http://community.opscode.com/api/v1'
 
-cookbook 'dmg'
+cookbook 'dmg',
+  :github => 'jeroenj/dmg'
 cookbook 'homebrew'
 cookbook 'mac_os_x',
   :github => 'jtimberman/mac_os_x-cookbook'
