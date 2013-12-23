@@ -1,6 +1,7 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
+    dmg (2.1.2)
     homebrew (1.5.4)
 
 GIT
@@ -12,13 +13,6 @@ GIT
       dmg (>= 0.0.0)
       homebrew (>= 0.0.0)
       mac_os_x (>= 0.0.0)
-
-GIT
-  remote: https://github.com/jeroenj/dmg
-  ref: master
-  sha: adf71a897843d66b1113004bfd509b534e692ae5
-  specs:
-    dmg (2.1.1)
 
 GIT
   remote: https://github.com/jtimberman/mac_os_x-cookbook
