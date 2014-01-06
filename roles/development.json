@@ -1,6 +1,8 @@
 {
   "name": "development",
   "run_list": [
+    "recipe[elephant::chruby]",
+
     "recipe[elephant::1password]",
     "recipe[elephant::alfred]",
     "recipe[elephant::appcleaner]",
