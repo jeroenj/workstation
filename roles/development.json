@@ -11,7 +11,6 @@
     "recipe[elephant::calendar]",
     "recipe[elephant::charles]",
     "recipe[elephant::chrome]",
-    "recipe[elephant::cloudapp]",
     "recipe[elephant::cord]",
     "recipe[elephant::cyberduck]",
     "recipe[elephant::dash]",
