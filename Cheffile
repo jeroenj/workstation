@@ -2,8 +2,6 @@ site 'http://community.opscode.com/api/v1'
 
 cookbook 'dmg'
 cookbook 'homebrew'
-cookbook 'mac_os_x',
-  :github => 'jtimberman/mac_os_x-cookbook'
+cookbook 'mac_os_x', github: 'jtimberman/mac_os_x-cookbook'
 
-cookbook 'elephant',
-  :github => 'jeroenj/chef-elephant'
+cookbook 'elephant', github: 'jeroenj/chef-elephant'
