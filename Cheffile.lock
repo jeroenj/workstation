@@ -1,7 +1,7 @@
 SITE
   remote: http://community.opscode.com/api/v1
   specs:
-    dmg (2.1.2)
+    dmg (2.2.0)
     homebrew (1.5.4)
 
 GIT
