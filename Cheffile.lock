@@ -3,6 +3,7 @@ SITE
   specs:
     dmg (2.2.0)
     homebrew (1.5.4)
+    mac_os_x (1.4.4)
 
 GIT
   remote: https://github.com/jeroenj/chef-elephant
@@ -13,13 +14,6 @@ GIT
       dmg (>= 0.0.0)
       homebrew (>= 0.0.0)
       mac_os_x (>= 0.0.0)
-
-GIT
-  remote: https://github.com/jtimberman/mac_os_x-cookbook
-  ref: master
-  sha: b4c8ae8f6577f8c7a7021efb46d2824c42125421
-  specs:
-    mac_os_x (1.4.2)
 
 DEPENDENCIES
   dmg (>= 0)
