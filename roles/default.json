@@ -8,6 +8,7 @@
     "recipe[homebrew]",
     "recipe[elephant::brew]",
     "recipe[elephant::oh_my_zsh]",
+    "recipe[elephant::python]",
     "recipe[elephant::ruby]",
 
     "recipe[elephant::do_dyndns]",
