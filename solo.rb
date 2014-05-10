@@ -1,3 +1,4 @@
+ssl_verify_mode :verify_peer
 cookbook_path File.expand_path('../cookbooks', __FILE__)
 role_path File.expand_path('../roles', __FILE__)
 data_bag_path File.expand_path('../data_bags', __FILE__)
