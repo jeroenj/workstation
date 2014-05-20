@@ -46,8 +46,7 @@
         "unrar",
         "watch",
         "wget",
-        "whois",
-        "zsh"
+        "whois"
       ]
     },
     "oh_my_zsh": {
