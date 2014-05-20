@@ -14,7 +14,6 @@
     "recipe[elephant::mail]",
     "recipe[elephant::nginx]",
     "recipe[elephant::plex_home_theater]",
-    "recipe[elephant::plex_media_center]",
     "recipe[elephant::plex_media_server]",
     "recipe[elephant::plexconnect]",
     "recipe[elephant::pureftpd]",

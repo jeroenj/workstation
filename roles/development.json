@@ -35,7 +35,6 @@
     "recipe[elephant::mou]",
     "recipe[elephant::node]",
     "recipe[elephant::plex_home_theater]",
-    "recipe[elephant::plex_media_center]",
     "recipe[elephant::pow]",
     "recipe[elephant::reeder]",
     "recipe[elephant::sabnzbd]",
