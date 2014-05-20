@@ -7,7 +7,7 @@
     "recipe[elephant::xquartz]",
     "recipe[homebrew]",
     "recipe[elephant::brew]",
-    "recipe[elephant::oh_my_zsh]",
+    "recipe[elephant::prezto]",
     "recipe[elephant::python]",
     "recipe[elephant::ruby]",
 
