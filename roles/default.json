@@ -4,9 +4,9 @@
     "recipe[elephant::data_bags]",
 
     "recipe[elephant::system]",
-    "recipe[elephant::xquartz]",
     "recipe[homebrew]",
     "recipe[elephant::brew]",
+    "recipe[elephant::xquartz]",
     "recipe[elephant::prezto]",
     "recipe[elephant::python]",
     "recipe[elephant::ruby]",
