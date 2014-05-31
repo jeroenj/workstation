@@ -6,7 +6,6 @@
     "recipe[elephant::1password]",
     "recipe[elephant::alfred]",
     "recipe[elephant::appcleaner]",
-    "recipe[elephant::archiver]",
     "recipe[elephant::beid]",
     "recipe[elephant::calendar]",
     "recipe[elephant::charles]",
