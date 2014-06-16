@@ -16,7 +16,8 @@
     "recipe[elephant::hostname]",
     "recipe[elephant::java]",
     "recipe[elephant::ssh]",
-    "recipe[elephant::vim]"
+    "recipe[elephant::vim]",
+    "recipe[elephant::wakeonlan]"
   ],
   "default_attributes": {
     "elephant": {
