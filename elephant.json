@@ -6,6 +6,9 @@
     "recipe[elephant::settings]"
   ],
   "elephant": {
-    "hostname": "Elephant"
+    "hostname": "Elephant",
+    "system": {
+      "restart_power_failure": true
+    }
   }
 }
