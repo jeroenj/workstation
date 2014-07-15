@@ -1,22 +1,19 @@
 SITE
   remote: https://supermarket.getchef.com/api/v1
   specs:
-    dmg (2.2.0)
     homebrew (1.6.6)
     mac_os_x (1.4.4)
 
 GIT
   remote: https://github.com/jeroenj/chef-elephant
   ref: master
-  sha: 12aaeb0e0545d9c7816b8c580b4642c39fc5d741
+  sha: c3904e41a1b56c6983b2674d62db7d442acf7362
   specs:
     elephant (0.0.1)
-      dmg (>= 0.0.0)
       homebrew (>= 0.0.0)
       mac_os_x (>= 0.0.0)
 
 DEPENDENCIES
-  dmg (>= 0)
   elephant (>= 0)
   homebrew (>= 0)
   mac_os_x (>= 0)
