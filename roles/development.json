@@ -52,30 +52,28 @@
     "recipe[elephant::vlc]"
   ],
   "default_attributes": {
-    "elephant": {
-      "homebrew": {
-        "packages": [
-          "ack",
-          "elasticsearch",
-          "git",
-          "git-extras",
-          "imagemagick",
-          "mongodb",
-          "par2",
-          "phantomjs",
-          "plowshare",
-          "pstree",
-          "redis",
-          "rsync",
-          "tig",
-          "tree",
-          "unrar",
-          "watch",
-          "wget",
-          "whois",
-          "zsh"
-        ]
-      }
+    "homebrew": {
+      "formulas": [
+        "ack",
+        "elasticsearch",
+        "git",
+        "git-extras",
+        "imagemagick",
+        "mongodb",
+        "par2",
+        "phantomjs",
+        "plowshare",
+        "pstree",
+        "redis",
+        "rsync",
+        "tig",
+        "tree",
+        "unrar",
+        "watch",
+        "wget",
+        "whois",
+        "zsh"
+      ]
     }
   },
   "override_attributes": {

@@ -4,7 +4,6 @@
     "recipe[elephant::data_bags]",
 
     "recipe[elephant::system]",
-    "recipe[homebrew]",
     "recipe[elephant::brew]",
     "recipe[elephant::xquartz]",
     "recipe[elephant::prezto]",

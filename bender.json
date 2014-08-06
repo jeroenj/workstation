@@ -33,25 +33,25 @@
   ],
   "elephant": {
     "hostname": "Bender",
-    "homebrew": {
-      "packages": [
-        "ack",
-        "git",
-        "git-extras",
-        "par2",
-        "pstree",
-        "rsync",
-        "tig",
-        "tree",
-        "unrar",
-        "watch",
-        "wget",
-        "whois"
-      ]
-    },
     "oh_my_zsh": {
       "projects_path": "~/apps",
       "prompt_prefix": "Bender"
     }
+  },
+  "homebrew": {
+    "formulas": [
+      "ack",
+      "git",
+      "git-extras",
+      "par2",
+      "pstree",
+      "rsync",
+      "tig",
+      "tree",
+      "unrar",
+      "watch",
+      "wget",
+      "whois"
+    ]
   }
 }
