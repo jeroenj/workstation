@@ -32,6 +32,7 @@
     "recipe[elephant::mariadb]",
     "recipe[elephant::max]",
     "recipe[elephant::mou]",
+    "recipe[elephant::mplayerx]",
     "recipe[elephant::node]",
     "recipe[elephant::plex_home_theater]",
     "recipe[elephant::pow]",
