@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+rm -rf cookbooks && berks vendor cookbooks && sudo chef-solo -c solo.rb -j `hostname | tr '[:upper:]' '[:lower:]'`.json $*
