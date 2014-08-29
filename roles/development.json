@@ -20,7 +20,6 @@
     "recipe[elephant::finder]",
     "recipe[elephant::firefox]",
     "recipe[elephant::firewall]",
-    "recipe[elephant::gitx]",
     "recipe[elephant::handbrake]",
     "recipe[elephant::hipchat]",
     "recipe[elephant::itunes]",
