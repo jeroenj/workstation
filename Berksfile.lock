@@ -3,6 +3,9 @@ DEPENDENCIES
     git: git://github.com/jeroenj/chef-elephant.git
     revision: 577400038a4b7198e9ac2724a35ef0d141017450
   homebrew
+    git: git://github.com/jeroenj/homebrew-cookbook.git
+    revision: 0476e8c8814b46cc009d93e0801dbfd31ed2e54a
+    ref: cask-in
   mac_os_x
 
 GRAPH
