@@ -60,6 +60,7 @@
     "recipe[elephant::sublime_text]",
     "recipe[elephant::teamviewer]",
     "recipe[elephant::terminal]",
+    "recipe[elephant::tmux]",
     "recipe[elephant::toggl]",
     "recipe[elephant::transmission]",
     "recipe[elephant::tunnelblick]",
