@@ -20,6 +20,7 @@
     "recipe[elephant::wakeonlan]",
 
     "recipe[elephant::1password]",
+    "recipe[elephant::ack]",
     "recipe[elephant::alfred]",
     "recipe[elephant::appcleaner]",
     "recipe[elephant::beid]",
@@ -74,7 +75,6 @@
     },
     "homebrew": {
       "formulas": [
-        "ack",
         "elasticsearch",
         "git",
         "git-extras",
