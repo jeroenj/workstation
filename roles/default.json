@@ -65,6 +65,7 @@
     "recipe[elephant::toggl]",
     "recipe[elephant::transmission]",
     "recipe[elephant::tunnelblick]",
+    "recipe[elephant::user_aliases]",
     "recipe[elephant::vagrant]",
     "recipe[elephant::virtualbox]",
     "recipe[elephant::vlc]"
