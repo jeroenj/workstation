@@ -51,6 +51,7 @@
     "recipe[elephant::mplayerx]",
     "recipe[elephant::node]",
     "recipe[elephant::plex_home_theater]",
+    "recipe[elephant::postgresql]",
     "recipe[elephant::pow]",
     "recipe[elephant::reeder]",
     "recipe[elephant::sabnzbd]",
