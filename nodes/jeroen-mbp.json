@@ -1,0 +1,9 @@
+{
+  "run_list": [
+    "role[default]",
+    "recipe[elephant::settings]"
+  ],
+  "elephant": {
+    "hostname": "jeroen-mbp"
+  }
+}
