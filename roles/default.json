@@ -42,7 +42,6 @@
     "recipe[elephant::hipchat]",
     "recipe[elephant::itunes]",
     "recipe[elephant::jubler]",
-    "recipe[elephant::kbc_business]",
     "recipe[elephant::logitech_harmony]",
     "recipe[elephant::logrotate]",
     "recipe[elephant::mail]",
