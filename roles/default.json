@@ -9,6 +9,7 @@
     "recipe[elephant::ssh]",
     "recipe[elephant::prezto]",
     "recipe[elephant::python]",
+    "recipe[elephant::mariadb]",
     "recipe[elephant::ruby]",
     "recipe[elephant::chruby]",
 
@@ -45,7 +46,6 @@
     "recipe[elephant::logitech_harmony]",
     "recipe[elephant::logrotate]",
     "recipe[elephant::mail]",
-    "recipe[elephant::mariadb]",
     "recipe[elephant::max]",
     "recipe[elephant::mou]",
     "recipe[elephant::mplayerx]",
