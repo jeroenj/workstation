@@ -6,6 +6,7 @@
     "recipe[elephant::system]",
     "recipe[elephant::brew]",
     "recipe[elephant::xquartz]",
+    "recipe[elephant::ssh]",
     "recipe[elephant::prezto]",
     "recipe[elephant::python]",
     "recipe[elephant::ruby]",
@@ -15,7 +16,6 @@
     "recipe[elephant::git]",
     "recipe[elephant::hostname]",
     "recipe[elephant::java]",
-    "recipe[elephant::ssh]",
     "recipe[elephant::vim]",
     "recipe[elephant::wakeonlan]",
 
