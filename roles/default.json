@@ -77,7 +77,6 @@
     },
     "homebrew": {
       "formulas": [
-        "elasticsearch",
         "git",
         "git-extras",
         "icdiff",
