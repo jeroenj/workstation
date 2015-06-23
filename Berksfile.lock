@@ -2,7 +2,7 @@ DEPENDENCIES
   elephant
     git: git://github.com/jeroenj/chef-elephant.git
     revision: 577400038a4b7198e9ac2724a35ef0d141017450
-  homebrew (~> 1.12.0)
+  homebrew (~> 1.13.0)
   mac_os_x
 
 GRAPH
@@ -10,6 +10,6 @@ GRAPH
   elephant (0.0.1)
     homebrew (>= 0.0.0)
     mac_os_x (>= 0.0.0)
-  homebrew (1.12.0)
+  homebrew (1.13.0)
     build-essential (>= 2.1.2)
   mac_os_x (1.4.6)
