@@ -94,6 +94,13 @@
         "whois",
         "zsh"
       ]
+    },
+    "mac_os_x": {
+      "settings": {
+        "login": {
+          "LoginwindowText": "Please contact my owner if you found me."
+        }
+      }
     }
   },
   "override_attributes": {
