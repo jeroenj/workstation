@@ -58,7 +58,6 @@
     "recipe[elephant::sequel_pro]",
     "recipe[elephant::skype]",
     "recipe[elephant::spotify]",
-    "recipe[elephant::sublime_text]",
     "recipe[elephant::teamviewer]",
     "recipe[elephant::terminal]",
     "recipe[elephant::tmux]",
