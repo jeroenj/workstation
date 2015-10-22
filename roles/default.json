@@ -32,6 +32,7 @@
     "recipe[elephant::cyberduck]",
     "recipe[elephant::dash]",
     "recipe[elephant::divvy]",
+    "recipe[elephant::docker]",
     "recipe[elephant::doxie]",
     "recipe[elephant::drobo]",
     "recipe[elephant::dropbox]",
