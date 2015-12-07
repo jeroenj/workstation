@@ -2,9 +2,7 @@ DEPENDENCIES
   elephant
     git: git://github.com/jeroenj/chef-elephant.git
     revision: 577400038a4b7198e9ac2724a35ef0d141017450
-  homebrew
-    git: git://github.com/jeroenj/homebrew-cookbook.git
-    revision: 5d4e6eda52539b6d7d5407b9daf2918f4d46ac26
+  homebrew (~> 2.0.2)
   mac_os_x
 
 GRAPH
@@ -12,6 +10,6 @@ GRAPH
   elephant (0.0.1)
     homebrew (>= 0.0.0)
     mac_os_x (>= 0.0.0)
-  homebrew (2.0.1)
+  homebrew (2.0.2)
     build-essential (>= 2.1.2)
   mac_os_x (1.4.6)
