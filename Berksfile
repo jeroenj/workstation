@@ -1,6 +1,6 @@
 source 'https://supermarket.getchef.com'
 
-cookbook 'homebrew', '~> 2.0.2'
+cookbook 'homebrew', '~> 2.0.3'
 cookbook 'mac_os_x'
 
 cookbook 'elephant', github: 'jeroenj/chef-elephant'
