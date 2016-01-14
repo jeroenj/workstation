@@ -27,6 +27,7 @@
     "recipe[elephant::beid]",
     "recipe[elephant::calendar]",
     "recipe[elephant::charles]",
+    "recipe[elephant::chef]",
     "recipe[elephant::chrome]",
     "recipe[elephant::cord]",
     "recipe[elephant::cyberduck]",
