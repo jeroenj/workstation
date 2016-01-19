@@ -1,14 +1,14 @@
 DEPENDENCIES
-  elephant
-    path: site-cookbooks/elephant
+  base
+    path: site-cookbooks/base
   homebrew (~> 2.0.3)
   mac_os_x
 
 GRAPH
-  build-essential (2.2.4)
-  elephant (0.0.1)
+  base (0.0.1)
     homebrew (>= 0.0.0)
     mac_os_x (>= 0.0.0)
+  build-essential (2.2.4)
   homebrew (2.0.3)
     build-essential (>= 2.1.2)
   mac_os_x (1.4.6)
