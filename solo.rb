@@ -1,5 +1,6 @@
-ssl_verify_mode :verify_peer
-cookbook_path File.expand_path('../cookbooks', __FILE__)
-role_path File.expand_path('../roles', __FILE__)
-data_bag_path File.expand_path('../data_bags', __FILE__)
-json_attribs File.expand_path('../node.json', __FILE__)
+pwd = Pathname.pwd
+
+cookbook_path pwd.join('cookbooks')
+role_path pwd.join('roles')
+data_bag_path pwd.join('data_bags')
+json_attribs pwd.join('node.json')
