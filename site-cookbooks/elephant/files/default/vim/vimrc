@@ -1,0 +1,137 @@
+set shell=bash
+
+execute pathogen#infect()
+Helptags
+
+" This fixes focus events in tmux in Terminal.app
+let g:vitality_always_assume_iterm = 1
+
+set clipboard=unnamed
+
+syntax on
+set number
+set relativenumber
+autocmd InsertEnter * :set norelativenumber
+autocmd InsertLeave * :set relativenumber
+au FocusLost * :set norelativenumber
+au FocusGained * :set relativenumber
+
+color Dracula
+set background=dark
+
+if $TERM == "xterm-256color"
+  set t_Co=256
+end
+
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
+set nobackup
+set nowritebackup
+set noswapfile
+
+cnoreabbrev W w
+cnoreabbrev Q q
+cnoreabbrev Wq wq
+
+set wildignore+=*/tmp/*,*/log/*,*/rcov/*
+
+set hlsearch incsearch
+
+let mapleader=","
+
+" Use ack instead of grep
+set grepprg=ack
+let g:grep_cmd_opts = '--noheading'
+
+" Show trailing whitespaces
+set list listchars=tab:»·,trail:·,nbsp:·
+
+" Open new split panes to right and bottom
+set splitbelow
+set splitright
+
+" Quicker window movement
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
+
+" Tab completion
+" will insert tab at beginning of line,
+" will use completion if not at beginning
+set wildmode=list:longest,list:full
+function! InsertTabWrapper()
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    else
+        return "\<c-p>"
+    endif
+endfunction
+inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
+inoremap <S-Tab> <c-n>
+
+let g:syntastic_aggregate_errors = 1
+let g:syntastic_check_on_wq = 0
+
+command! Syn call CustomSyn()
+function! CustomSyn()
+  let g:syntastic_haml_checkers = ['haml']
+  let g:syntastic_ruby_checkers = ['mri']
+  :SyntasticCheck
+endfunction
+command! SynS call CustomSynS()
+function! CustomSynS()
+  let g:syntastic_haml_checkers = ['haml', 'haml_lint']
+  let g:syntastic_ruby_checkers = ['mri', 'rubocop']
+  :SyntasticCheck
+endfunction
+
+fun! <SID>StripTrailingWhitespaces()
+  let l = line(".")
+  let c = col(".")
+  %s/\s\+$//e
+  call cursor(l, c)
+endfun
+
+autocmd FileType c,coffee,cpp,eruby,gitcommit,html,java,json,markdown,php,python,ruby,scss,yaml autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_open_new_file = 'h'
+
+set modifiable
+
+let g:gitgutter_realtime = 0
+set updatetime=750
+
+let g:ackhighlight = 1
+let g:ackpreview = 1
+
+" Save files with sudo
+cmap w!! w !sudo tee > /dev/null %
+
+" Allow files to be modified when hidden
+set hidden
+
+" Sets files referenced by quickfix list to the arglist
+command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
+function! QuickfixFilenames()
+  " Building a hash ensures we get each buffer only once
+  let buffer_numbers = {}
+  for quickfix_item in getqflist()
+    let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
+  endfor
+  return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
+endfunction
+
+" Vim tmux runner
+let g:VtrUseVtrMaps = 1
+
+" Vim spec runner
+let g:spec_runner_dispatcher = 'VtrSendCommand! {command}'
+map <Leader>tf <Plug>RunCurrentSpecFile
+map <Leader>tt <Plug>RunFocusedSpec
+map <Leader>tl <Plug>RunMostRecentSpec

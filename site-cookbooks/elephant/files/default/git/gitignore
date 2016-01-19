@@ -1,0 +1,13 @@
+.bundle
+.DS_Store
+.powrc
+.repl_history
+.ruby-gemset
+.ruby-version
+build
+custom_plan.rb
+log
+Procfile.dev
+tmp/restart.txt
+*.swp
+.vagrant/
