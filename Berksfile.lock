@@ -1,13 +1,8 @@
 DEPENDENCIES
-  base
-    path: site-cookbooks/base
   homebrew (~> 2.0.3)
   mac_os_x
 
 GRAPH
-  base (0.0.1)
-    homebrew (>= 0.0.0)
-    mac_os_x (>= 0.0.0)
   build-essential (2.2.4)
   homebrew (2.0.3)
     build-essential (>= 2.1.2)
