@@ -1,7 +1,6 @@
 DEPENDENCIES
   elephant
-    git: git://github.com/jeroenj/chef-elephant.git
-    revision: 577400038a4b7198e9ac2724a35ef0d141017450
+    path: site-cookbooks/elephant
   homebrew (~> 2.0.3)
   mac_os_x
 
