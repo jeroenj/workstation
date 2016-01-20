@@ -1,9 +1,9 @@
 DEPENDENCIES
-  homebrew (~> 2.0.3)
+  homebrew (~> 2.0.4)
   mac_os_x
 
 GRAPH
   build-essential (2.2.4)
-  homebrew (2.0.3)
+  homebrew (2.0.4)
     build-essential (>= 2.1.2)
   mac_os_x (1.4.6)
