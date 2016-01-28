@@ -86,6 +86,7 @@
         "mongodb",
         "par2",
         "plowshare",
+        "progress",
         "pstree",
         "redis",
         "rsync",
