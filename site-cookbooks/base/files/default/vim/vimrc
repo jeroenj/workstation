@@ -135,3 +135,5 @@ let g:spec_runner_dispatcher = 'VtrSendCommand! {command}'
 map <Leader>tf <Plug>RunCurrentSpecFile
 map <Leader>tt <Plug>RunFocusedSpec
 map <Leader>tl <Plug>RunMostRecentSpec
+
+au BufRead,BufNewFile Guardfile set filetype=ruby
