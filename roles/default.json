@@ -112,9 +112,6 @@
     "base": {
       "sabnzbd": {
         "launch_agent": false
-      },
-      "transmission": {
-        "launch_agent": false
       }
     }
   },

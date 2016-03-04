@@ -13,12 +13,3 @@ default[:base][:settings][:transmission] = {
   'WarningDonate' => false,
   'WarningLegal' => false
 }
-
-default[:base][:transmission][:launch_agent] = {
-  'Label' => 'transmission',
-  'Program' => "#{ENV['HOME']}/Applications/Transmission.app/Contents/MacOS/Transmission",
-  'RunAtLoad' => true,
-  'KeepAlive' => {
-    'SuccessfulExit' => false
-  }
-}
