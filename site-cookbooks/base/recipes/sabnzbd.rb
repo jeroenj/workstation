@@ -66,11 +66,3 @@ if node[:base][:sabnzbd][:preferences]
     end
   end
 end
-
-if node[:base][:sabnzbd][:launch_agent]
-  base_plist "#{ENV['HOME']}/Library/LaunchAgents/sabnzbd.plist" do
-    content node[:base][:sabnzbd][:launch_agent]
-    owner node[:base][:username]
-    group node[:base][:group]
-  end
-end

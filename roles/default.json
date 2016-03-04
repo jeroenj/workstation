@@ -108,13 +108,6 @@
       }
     }
   },
-  "override_attributes": {
-    "base": {
-      "sabnzbd": {
-        "launch_agent": false
-      }
-    }
-  },
   "chef_type": "role",
   "json_class": "Chef::Role"
 }
