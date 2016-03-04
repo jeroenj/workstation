@@ -49,7 +49,6 @@
     "recipe[base::mail]",
     "recipe[base::max]",
     "recipe[base::mou]",
-    "recipe[base::mplayerx]",
     "recipe[base::node]",
     "recipe[base::plex_home_theater]",
     "recipe[base::postgresql]",
