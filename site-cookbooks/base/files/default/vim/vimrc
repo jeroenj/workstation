@@ -137,3 +137,4 @@ map <Leader>tt <Plug>RunFocusedSpec
 map <Leader>tl <Plug>RunMostRecentSpec
 
 au BufRead,BufNewFile Guardfile set filetype=ruby
+au BufRead,BufNewFile Procfile,Procfile.dev set filetype=yaml
