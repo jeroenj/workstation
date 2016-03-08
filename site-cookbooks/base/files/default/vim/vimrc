@@ -90,13 +90,18 @@ function! CustomSynS()
 endfunction
 
 fun! <SID>StripTrailingWhitespaces()
+  if exists('b:noStripWhitespace')
+    return
+  endif
   let l = line(".")
   let c = col(".")
   %s/\s\+$//e
   call cursor(l, c)
 endfun
 
-autocmd FileType c,coffee,cpp,eruby,gitcommit,html,java,json,markdown,php,python,ruby,scss,yaml autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
+autocmd FileType ruby let b:noStripWhitespace=1
+autocmd BufWritePre *.conf.erb let b:noStripWhitespace=1
+autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
