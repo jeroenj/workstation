@@ -99,7 +99,6 @@ fun! <SID>StripTrailingWhitespaces()
   call cursor(l, c)
 endfun
 
-autocmd FileType ruby let b:noStripWhitespace=1
 autocmd BufWritePre *.conf.erb let b:noStripWhitespace=1
 autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
