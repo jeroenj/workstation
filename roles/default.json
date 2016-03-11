@@ -65,6 +65,7 @@
     "recipe[base::toggl]",
     "recipe[base::transmission]",
     "recipe[base::tunnelblick]",
+    "recipe[base::typora]",
     "recipe[base::user_aliases]",
     "recipe[base::vagrant]",
     "recipe[base::virtualbox]",
