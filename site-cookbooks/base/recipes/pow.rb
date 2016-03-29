@@ -24,6 +24,11 @@ execute 'pow --install-local' do
   not_if { pow_installed }
 end
 
+# Fix for https://github.com/basecamp/pow/issues/517#issuecomment-164804004
+cookbook_file '/Library/LaunchDaemons/cx.pow.firewall.plist' do
+  source 'pow/cx.pow.firewall.plist'
+end
+
 execute 'launchctl load -w /Library/LaunchDaemons/cx.pow.firewall.plist' do
   not_if { pow_installed }
 end
