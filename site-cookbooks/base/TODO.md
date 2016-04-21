@@ -2,6 +2,9 @@
 
 ## System
 
+* create `/Users/jeroen/Library/LaunchAgents/`
+* Show Volume and BlueTooth icons
+
 ### Dock
 * Only restart Dock if actual changes happened in Dock settings
 
@@ -26,6 +29,8 @@
 * Disable autocorrect
 
 ### Keyboard Shortcuts
+Set as `NSUserKeyEquivalents` in app settings?
+
 * Disable F11/F12
 * Disable ^ up/down
 * Enable ^1 to switch to desktop 1
@@ -40,7 +45,7 @@
   * Archive: CMD + shift + S
 * Add HipChat shortcuts:
   * Close Window: CMD+W
-  * Close Tab: CMD+SHIFT+W
+  * Close Chat: CMD+SHIFT+W
 
 ### Preferences
 * Click in the scrollbar to: Jump to the spot that's clicked
@@ -76,6 +81,7 @@
 * Connecting an iPhone does not open any apps
 
 ### iTunes
+* All settings
 * Disable song notifications
 * Show status bar
 
@@ -114,6 +120,7 @@ default[:base][:settings][:notes] = {
 
 ### 1Password
 * Disable "Verify browser code signature" => Not implemented since this is a "secure" setting
+* Auto submit after filling
 * Install Safari Extension
 * Install Chrome Extension
 * Extension preferences
