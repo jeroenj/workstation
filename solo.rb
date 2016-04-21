@@ -1,6 +1,6 @@
 pwd = Pathname.pwd
 
-cookbook_path [pwd.join('berks-cookbooks'), pwd.join('site-cookbooks')]
-role_path pwd.join('roles')
-data_bag_path pwd.join('data_bags')
-json_attribs pwd.join('node.json')
+cookbook_path [pwd.join('berks-cookbooks').to_s, pwd.join('site-cookbooks').to_s]
+role_path pwd.join('roles').to_s
+data_bag_path pwd.join('data_bags').to_s
+json_attribs pwd.join('node.json').to_s
