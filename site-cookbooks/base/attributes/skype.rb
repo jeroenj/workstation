@@ -1,18 +1,22 @@
 default[:base][:settings][:skype] = {
   'domain' => 'com.skype.skype',
+  'ContactListViewMode' => 1,
   'DialpadOpen' => false,
   'DisableAllVisualNotifications' => true,
   'LastUserSidebarWidth' => 220,
   'ShowAddressBookContacts' => false,
   'ShowDialpadOnLogin' => false,
+  'SKDefaultPSTNCountryCode' => 'be',
+  'SKFileTransferShowImagesInline' => 0,
   'SKPauseITunes' => false,
   'SKShowSilentUpgradeNotice' => false,
   'SKShowSystemStatusBarItem' => false,
+  'SKShowWatermark' => false,
   'SKShowWelcomeTour' => false,
   'SKSilentUpgradeNoticeShown' => true,
   'SKUseCompactChatStyle' => true,
   'SKUseLargeEmoticons' => false,
-  'SourceListLayoutMode' => false,
+  'SourceListLayoutMode' => 2,
   'UserDefinedEvents' => '{' \
                          '  Busy = {' \
                          '    PlaySound = 0;' \
@@ -36,6 +40,7 @@ default[:base][:settings][:skype] = {
                          '    PlaySound = 0;' \
                          '  };' \
                          '  FirstMessageReceived = {' \
+                         '    Display = 0;' \
                          '    PlaySound = 0;' \
                          '  };' \
                          '  HangUp = {' \
@@ -51,6 +56,7 @@ default[:base][:settings][:skype] = {
                          '    PlaySound = 0;' \
                          '  };' \
                          '  MessageReceived = {' \
+                         '    Display = 0;' \
                          '    PlaySound = 0;' \
                          '  };' \
                          '  MessageSent = {' \
