@@ -27,7 +27,6 @@
     "recipe[base::beid]",
     "recipe[base::calendar]",
     "recipe[base::charles]",
-    "recipe[base::chef]",
     "recipe[base::chrome]",
     "recipe[base::cord]",
     "recipe[base::cyberduck]",
