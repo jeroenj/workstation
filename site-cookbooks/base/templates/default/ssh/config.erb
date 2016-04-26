@@ -4,6 +4,9 @@ Host *
   ServerAliveInterval 60
   ServerAliveCountMax 5
 
+Host *.openminds.be
+User root
+
 <% node[:base][:ssh][:hosts].each do |host| %>
 Host <%= host[:host] %>
 User <%= host[:user] %>
