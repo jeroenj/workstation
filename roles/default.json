@@ -68,7 +68,8 @@
     "recipe[base::user_aliases]",
     "recipe[base::vagrant]",
     "recipe[base::virtualbox]",
-    "recipe[base::vlc]"
+    "recipe[base::vlc]",
+    "recipe[base::whatsapp]"
   ],
   "default_attributes": {
     "base": {
