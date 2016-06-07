@@ -1,0 +1,212 @@
+### Aliases
+
+# Ruby (on Rails)
+alias logd='tail -f log/development.log'
+alias logt='tail -f log/test.log'
+
+alias rst='touch tmp/restart.txt'
+
+alias dbm='bin/rake db:migrate db:test:prepare'
+
+alias uninstall_all_gems='gem list | cut -d" " -f1 | xargs gem uninstall -aIx'
+
+# Foreman
+alias fm='foreman start -f Procfile.dev'
+
+# dig
+alias dog='dig +short'
+
+# git
+alias gst='git status -sb'
+alias gba='git branch -a'
+alias gl='git pull'
+alias gp='git push'
+alias gpf='git push --force-with-lease'
+alias gf='git fetch -p origin'
+
+# tig
+alias ts='tig status'
+
+# knife
+alias knife='nocorrect knife'
+
+# ifconfig
+alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
+alias rip='curl ipecho.net/plain ; echo'
+
+# docker
+alias dc='docker-compose'
+alias dm='docker-machine'
+
+
+
+### chruby
+precmd_functions+=("chruby_auto")
+
+
+
+### exports
+
+# Ruby
+export RUBYOPT="rubygems"
+
+# vim as default text editor
+export EDITOR="vim"
+export VISUAL="vim"
+
+# In order to prefer homebrew's bin dir
+export PATH=/usr/local/bin:/usr/local/sbin:$PATH
+
+export PATH=$PATH:/usr/local/share/npm/bin:./node_modules/.bin
+
+# Make sure it is set to UTF-8
+export LANG="en_US.UTF-8"
+export LC_CTYPE=$LANG
+
+# Disable guard notifications
+export GUARD_NOTIFY=false
+
+# Use personal CHEF_ENV by default
+export CHEF_ENV="openminds"
+
+export JAVA_HOME=$(/usr/libexec/java_home)
+
+export GO_PATH="/Users/jeroen/Dropbox/Development/go"
+
+
+
+### git
+
+#!/bin/bash
+
+HASH="%C(yellow)%h%C(reset)"
+RELATIVE_TIME="%C(green)%ai%C(reset)"
+AUTHOR="%C(cyan)%an%C(reset)"
+REFS="%C(red)%d%C(reset)"
+SUBJECT="%s"
+
+FORMAT="$HASH{$RELATIVE_TIME{$AUTHOR{$REFS $SUBJECT"
+
+function pretty_git_log() {
+  git log --graph --pretty="tformat:$FORMAT" $* |
+  column -t -s '{' |
+  less -FXRS
+}
+
+
+
+### projects
+
+PROJECT_PATHS=(/Users/jeroen/Development/*/)
+
+function project () {
+  cmd="cd"
+  file=$1
+
+  if [[ "open" == "$file" ]] then
+    file=$2
+    cmd=(${(s: :)EDITOR})
+  fi
+
+  for project in $PROJECT_PATHS; do
+    if [[ -d $project/$file ]] then
+      $cmd "$project/$file"
+      unset project # Unset project var
+      return
+    fi
+  done
+
+  echo "No such project $1"
+}
+
+alias p="project"
+alias m="project open "
+
+function _project () {
+  compadd `/bin/ls -l $PROJECT_PATHS | awk '{ print $9 }'`
+}
+
+compdef _project project
+
+
+
+### rails
+function sc() {
+  if [ -e bin/rails ]; then
+    ruby bin/rails console $*
+  elif [ -e script/rails ]; then
+    ruby script/rails console $*
+  elif [ -e script/console ]; then
+    ruby script/console $*
+  else;
+    echo "Not in a Rails project"
+  fi
+}
+
+
+
+### ruby
+function ruby-version() {
+  ruby -e 'puts "#{RUBY_VERSION}p#{RUBY_PATCHLEVEL}"'
+}
+
+
+
+### tmux
+function tmux-update-statusbar() {
+  if [ `tmux list-clients | grep '' -c` -gt 1 ]
+  then
+    color='red'
+  else
+    color='black'
+  fi
+  tmux set -q status-left "#[fg=$color]#S:"
+  tmux set -q status-right "#[fg=cyan]#(echo $RUBY_VERSION)  #[fg=green]%d %b %Y  %H:%M"
+}
+precmd_functions+=("tmux-update-statusbar")
+
+function mgetin() {
+  p getin
+
+  tmux new-window -n getin
+
+  tmux send-keys -t 1 '' C-m
+  tmux send-keys -t 1 fm C-m
+
+  tmux split-window
+  tmux select-layout b8d3,364x83,0,0\{182x83,0,0\[182x2,0,0,3,182x40,0,3,4,182x39,0,44,5\],181x83,183,0,1\}
+
+  tmux send-keys -t 2 '' C-m
+  tmux send-keys -t 2 sc C-m
+
+  tmux split-window
+  tmux select-layout b8d3,364x83,0,0\{182x83,0,0\[182x2,0,0,3,182x40,0,3,4,182x39,0,44,5\],181x83,183,0,1\}
+
+  tmux send-keys -t 3 '' C-m
+  tmux send-keys -t 3 gst C-m
+
+  tmux split-window
+  tmux select-layout b8d3,364x83,0,0\{182x83,0,0\[182x2,0,0,3,182x40,0,3,4,182x39,0,44,5\],181x83,183,0,1\}
+
+  tmux send-keys -t 4 '' C-m
+  tmux send-keys -t 4 vim C-m
+
+  tmux select-layout b8d3,364x83,0,0\{182x83,0,0\[182x2,0,0,3,182x40,0,3,4,182x39,0,44,5\],181x83,183,0,1\}
+
+  tmux select-pane -t 3
+}
+
+
+
+### Chef
+function kitchen {
+  if [ -f Berksfile.lock ] ; then
+    rm -f Berksfile.lock
+  fi
+  if [ $1 = "cv" ] ; then
+    /opt/chefdk/bin/kitchen converge ${@:2}
+    /opt/chefdk/bin/kitchen verify ${@:2}
+  else
+    /opt/chefdk/bin/kitchen $@
+  fi
+}

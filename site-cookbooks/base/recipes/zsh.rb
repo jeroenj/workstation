@@ -6,3 +6,7 @@ execute 'Set default shell to zsh' do
   group node[:base][:group]
   not_if { `printf $SHELL` == '/bin/zsh' }
 end
+
+cookbook_file "#{ENV['HOME']}/.profile" do
+  source "zsh/profile"
+end
