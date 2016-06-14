@@ -71,7 +71,8 @@ export CHEF_ENV="openminds"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
 
-export GO_PATH="/Users/jeroen/Dropbox/Development/go"
+export GOROOT="/usr/local/opt/go/libexec"
+export GOPATH="/Users/jeroen/Dropbox/Development/go"
 
 
 
