@@ -26,13 +26,13 @@
 [github]
 	user = <%= node[:base][:git][:github][:user] %>
 	token = <%= node[:base][:git][:github][:token] %>
+[init]
+	templatedir = ~/.git-templates
+[merge]
+	conflictstyle = diff3
+[push]
+	default = upstream
 [user]
 	name = <%= node[:base][:git][:name] %>
 	email = <%= node[:base][:git][:email] %>
 	useconfigonly = true
-[push]
-	default = upstream
-[merge]
-  conflictstyle = diff3
-[init]
-  templatedir = ~/.git-templates
