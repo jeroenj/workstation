@@ -21,6 +21,8 @@
 	excludesfile = ~/.gitignore
 	whitespace = trailing-space,space-before-tab
 	autocrlf = false
+[diff]
+	compactionHeuristic = 1
 [github]
 	user = <%= node[:base][:git][:github][:user] %>
 	token = <%= node[:base][:git][:github][:token] %>
