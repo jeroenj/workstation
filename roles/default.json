@@ -44,7 +44,6 @@
     "recipe[base::logitech_harmony]",
     "recipe[base::logrotate]",
     "recipe[base::mail]",
-    "recipe[base::max]",
     "recipe[base::node]",
     "recipe[base::postgresql]",
     "recipe[base::postico]",
