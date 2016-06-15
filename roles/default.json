@@ -28,7 +28,6 @@
     "recipe[base::calendar]",
     "recipe[base::charles]",
     "recipe[base::chrome]",
-    "recipe[base::cord]",
     "recipe[base::dash]",
     "recipe[base::divvy]",
     "recipe[base::docker]",
