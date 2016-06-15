@@ -49,7 +49,6 @@
     "recipe[base::postico]",
     "recipe[base::pow]",
     "recipe[base::reeder]",
-    "recipe[base::sabnzbd]",
     "recipe[base::safari]",
     "recipe[base::sequel_pro]",
     "recipe[base::skype]",
