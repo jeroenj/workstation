@@ -46,7 +46,6 @@
     "recipe[base::mail]",
     "recipe[base::max]",
     "recipe[base::node]",
-    "recipe[base::plex_home_theater]",
     "recipe[base::postgresql]",
     "recipe[base::postico]",
     "recipe[base::pow]",
