@@ -13,6 +13,7 @@
     "recipe[base::ruby]",
     "recipe[base::chruby]",
 
+    "recipe[base::airport]",
     "recipe[base::do_dyndns]",
     "recipe[base::git]",
     "recipe[base::hostname]",
