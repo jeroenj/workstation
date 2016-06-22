@@ -5,5 +5,12 @@
   ],
   "base": {
     "hostname": "jeroen-mbp"
+  },
+  "mac_os_x": {
+    "settings": {
+      "screensaver": {
+        "askForPasswordDelay": 5
+      }
+    }
   }
 }
