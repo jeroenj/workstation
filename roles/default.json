@@ -49,6 +49,7 @@
     "recipe[base::postgresql]",
     "recipe[base::postico]",
     "recipe[base::pow]",
+    "recipe[base::puma_dev]",
     "recipe[base::reeder]",
     "recipe[base::safari]",
     "recipe[base::sequel_pro]",
