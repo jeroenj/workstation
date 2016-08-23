@@ -1,4 +1,6 @@
-package 'vim'
+package 'vim' do
+  options '--without-ruby'
+end
 
 cookbook_file "#{ENV['HOME']}/.vimrc" do
   source 'vim/vimrc'
