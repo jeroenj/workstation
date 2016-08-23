@@ -9,4 +9,6 @@ end
 
 cookbook_file "#{ENV['HOME']}/.profile" do
   source "zsh/profile"
+  user node[:base][:username]
+  group node[:base][:group]
 end
