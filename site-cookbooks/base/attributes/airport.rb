@@ -1,3 +1,4 @@
 default[:base][:airport][:prefs] = {
-  "DisconnectOnLogout" => "NO"
+  "DisconnectOnLogout" => "NO",
+  "JoinMode" => "Strongest"
 }
