@@ -9,4 +9,5 @@
   <AllDevicesSelView/>
   <FirstTimeRun>0</FirstTimeRun>
   <FirstTimeRunVersion>2.5.2 [64171]</FirstTimeRunVersion>
+  <SysTrayEnabled>0</SysTrayEnabled>
 </Settings>
