@@ -17,9 +17,16 @@ plist_preferences = {
   'ACExistingUser' => true
 }
 
+plist_file = ::File.expand_path('Appclicks/appclicks.plist', settings_path)
+
+file plist_file do
+  owner node[:base][:username]
+  group node[:base][:group]
+end
+
 plist_preferences.each do |key, value|
   mac_os_x_userdefaults "Drobo => #{key}: #{value}" do
-    domain ::File.expand_path('Appclicks/appclicks.plist', settings_path)
+    domain plist_file
     key key
     value value
   end
