@@ -1,6 +1,7 @@
 {
   "run_list": [
     "role[default]",
+    "recipe[base::ax88179]",
     "recipe[base::settings]"
   ],
   "base": {
