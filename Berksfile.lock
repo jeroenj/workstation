@@ -1,5 +1,6 @@
 DEPENDENCIES
   homebrew (= 2.1.2)
+  mac-app-store (= 2.1.0)
   mac_os_x
 
 GRAPH
@@ -10,10 +11,15 @@ GRAPH
   compat_resource (12.14.1)
   homebrew (2.1.2)
     build-essential (>= 2.1.2)
+  mac-app-store (2.1.0)
+    homebrew (~> 2.1)
+    reattach-to-user-namespace (~> 0.1)
   mac_os_x (1.4.6)
   mingw (1.2.4)
     compat_resource (>= 0.0.0)
     seven_zip (>= 0.0.0)
+  reattach-to-user-namespace (0.1.0)
+    homebrew (~> 2.1)
   seven_zip (2.0.2)
     windows (>= 1.2.2)
   windows (2.0.0)
