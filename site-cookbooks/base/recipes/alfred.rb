@@ -2,7 +2,7 @@
 
 homebrew_cask 'alfred'
 
-if node[:base][:alfred][:license]
+if node[:base][:alfred][:license][:code]
   directory "#{ENV['HOME']}/Library/Application Support/Alfred 2" do
     owner node[:base][:username]
     group node[:base][:group]
