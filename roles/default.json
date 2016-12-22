@@ -87,6 +87,7 @@
         "icdiff",
         "imagemagick",
         "iperf3",
+        "jq",
         "mas",
         "mongodb",
         "par2",
