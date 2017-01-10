@@ -164,7 +164,10 @@ function tmux-update-statusbar() {
   tmux set -q status-left "#[fg=$color]#S:"
   tmux set -q status-right "#[fg=cyan]#(echo $RUBY_VERSION)  #[fg=green]%d %b %Y  %H:%M"
 }
-precmd_functions+=("tmux-update-statusbar")
+
+if [ -n "$TMUX" ] ; then
+  precmd_functions+=("tmux-update-statusbar")
+fi
 
 
 
