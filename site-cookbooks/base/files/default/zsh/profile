@@ -166,37 +166,6 @@ function tmux-update-statusbar() {
 }
 precmd_functions+=("tmux-update-statusbar")
 
-function mgetin() {
-  p getin
-
-  tmux new-window -n getin
-
-  tmux send-keys -t 1 '' C-m
-  tmux send-keys -t 1 fm C-m
-
-  tmux split-window
-  tmux select-layout b8d3,364x83,0,0\{182x83,0,0\[182x2,0,0,3,182x40,0,3,4,182x39,0,44,5\],181x83,183,0,1\}
-
-  tmux send-keys -t 2 '' C-m
-  tmux send-keys -t 2 sc C-m
-
-  tmux split-window
-  tmux select-layout b8d3,364x83,0,0\{182x83,0,0\[182x2,0,0,3,182x40,0,3,4,182x39,0,44,5\],181x83,183,0,1\}
-
-  tmux send-keys -t 3 '' C-m
-  tmux send-keys -t 3 gst C-m
-
-  tmux split-window
-  tmux select-layout b8d3,364x83,0,0\{182x83,0,0\[182x2,0,0,3,182x40,0,3,4,182x39,0,44,5\],181x83,183,0,1\}
-
-  tmux send-keys -t 4 '' C-m
-  tmux send-keys -t 4 vim C-m
-
-  tmux select-layout b8d3,364x83,0,0\{182x83,0,0\[182x2,0,0,3,182x40,0,3,4,182x39,0,44,5\],181x83,183,0,1\}
-
-  tmux select-pane -t 3
-}
-
 
 
 ### Chef
