@@ -2,6 +2,7 @@ DEPENDENCIES
   homebrew (= 2.1.2)
   mac-app-store (= 2.1.0)
   mac_os_x
+  reattach-to-user-namespace (= 0.1.0)
 
 GRAPH
   build-essential (6.0.4)
