@@ -1,3 +1,4 @@
 berks-cookbooks
 tmp
 data_bags
+local-mode-cache
