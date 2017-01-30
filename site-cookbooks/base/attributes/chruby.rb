@@ -18,6 +18,7 @@ default[:base][:chruby] = {
     { name: 'mysql2' },
     { name: 'pry', version: '~> 0.10.0' },
     { name: 'pry-byebug' },
+    { name: 'puma', version: '~> 3.7.0' },
     { name: 'rubocop', version: '~> 0.35' }
   ]
 }
