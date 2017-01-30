@@ -1,4 +1,4 @@
-set shell=bash
+set shell=/bin/bash
 
 execute pathogen#infect()
 Helptags
