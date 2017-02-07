@@ -1,3 +1,5 @@
+homebrew_cask 'chefdk'
+
 directory "#{ENV['HOME']}/.chef" do
   owner node[:base][:username]
   group node[:base][:group]
