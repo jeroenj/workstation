@@ -25,6 +25,10 @@
   'type': 0`
 ```
 
+### Siri
+* languages
+* remove icon from menu bar and dock
+
 ### Keyboard
 * Disable autocorrect
 
@@ -232,6 +236,12 @@ default[:mac_os_x][:settings][:'1password_extension'] = {
 
 ### Reeder
 * All preferences (they are all dictionaries)
+
+### Resilio
+* Install package
+* Prepare sync directories?
+* Manage IgnoreList
+* `defaults write com.apple.screencapture location /Users/jeroen/Library/Mobile\ Documents/com\~apple\~CloudDocs/Screenshots`
 
 ### Sequel Pro
 * Favorites
