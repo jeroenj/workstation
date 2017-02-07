@@ -1,3 +1,3 @@
 #!/usr/bin/env sh
 
-sudo chef-solo -c solo.rb -j nodes/`hostname | tr '[:upper:]' '[:lower:]'`.json $*
+sudo chef-client -c solo.rb --local-mode -j nodes/`hostname | tr '[:upper:]' '[:lower:]'`.json $*
