@@ -1,4 +1,4 @@
 berks-cookbooks
 tmp
 data_bags
-local-mode-cache
+.chef/local-mode-cache
