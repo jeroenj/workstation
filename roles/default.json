@@ -35,7 +35,6 @@
     "recipe[base::docker]",
     "recipe[base::doxie]",
     "recipe[base::drobo]",
-    "recipe[base::dropbox]",
     "recipe[base::finder]",
     "recipe[base::firefox]",
     "recipe[base::firewall]",
