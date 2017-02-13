@@ -1,4 +1,4 @@
-names = ['shared', node[:base][:hostname].downcase]
+names = ['shared']
 
 # Code copied from ActiveSupport
 # https://github.com/rails/rails/blob/master/activesupport/lib/active_support/core_ext/hash/deep_merge.rb
