@@ -1,5 +1,7 @@
 homebrew_cask 'chefdk'
 
+chef_gem 'knife-solo'
+
 directory "#{ENV['HOME']}/.chef" do
   owner node[:base][:username]
   group node[:base][:group]
