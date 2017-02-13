@@ -1,1 +1,1 @@
-homebrew_cask 'oki-postscript-drivers'
+homebrew_cask 'oki-mc573series-driver'
