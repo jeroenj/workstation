@@ -1,5 +1,8 @@
 DEPENDENCIES
-  homebrew (= 3.0.0)
+  homebrew
+    git: https://github.com/jeroenj/homebrew-cookbook.git
+    revision: 31c9a16db5321b319373ea26c68a862c9c2319bf
+    branch: cask-user
   mac-app-store
     git: https://github.com/jeroenj/mac-app-store-chef.git
     revision: 437d905fdf23bb90b19fd2720a34ccc1c05fd568
