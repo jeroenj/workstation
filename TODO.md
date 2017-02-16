@@ -211,11 +211,6 @@ default[:mac_os_x][:settings][:'1password_extension'] = {
 ### Reeder
 * All preferences (they are all dictionaries)
 
-### Resilio
-* Install package
-* Prepare sync directories?
-* Manage IgnoreList
-
 ### Spotify
 * Disable launch on login
 
