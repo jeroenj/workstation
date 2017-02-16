@@ -208,32 +208,6 @@ default[:mac_os_x][:settings][:'1password_extension'] = {
 ### Google Chrome
 * Preferences
 
-### Max
-* Output preferences
-```ruby
-'outputFormats' => [
-  {
-    'component' => 0,
-    'name' => 'Apple MPEG-4 Audio (Apple Lossless)',
-    'selected' => true,
-    'settings' => {
-      'fileType' => 1832149350,
-      'formatID' => 1634492771,
-      'extensionsForType' => [
-        'm4a',
-        'm4r'
-      ],
-      'sampleRate' => 0, # type: real
-      'bitsPerChannel' => 0,
-      'formatFlags' => 0
-    }
-  }
-]
-```
-
-### Plex Home Theater
-* Don't hardcode version
-
 ### Reeder
 * All preferences (they are all dictionaries)
 
@@ -242,9 +216,6 @@ default[:mac_os_x][:settings][:'1password_extension'] = {
 * Prepare sync directories?
 * Manage IgnoreList
 * `defaults write com.apple.screencapture location /Users/jeroen/Library/Mobile\ Documents/com\~apple\~CloudDocs/Screenshots`
-
-### Sequel Pro
-* Favorites
 
 ### Spotify
 * Disable launch on login
