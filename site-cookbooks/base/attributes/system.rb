@@ -55,6 +55,11 @@ default[:mac_os_x][:settings][:network_storage] = {
   'DSDontWriteNetworkStores' => true
 }
 
+default[:mac_os_x][:settings][:screencapture] = {
+  'domain' => 'com.apple.screencapture',
+  'location' => "#{ENV['HOME']}/Library/Mobile\ Documents/com\~apple\~CloudDocs/Screenshots"
+}
+
 default[:mac_os_x][:settings][:screensaver] = {
   'domain' => 'com.apple.screensaver',
   'askForPasswordDelay' => 3600

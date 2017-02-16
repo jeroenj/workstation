@@ -215,7 +215,6 @@ default[:mac_os_x][:settings][:'1password_extension'] = {
 * Install package
 * Prepare sync directories?
 * Manage IgnoreList
-* `defaults write com.apple.screencapture location /Users/jeroen/Library/Mobile\ Documents/com\~apple\~CloudDocs/Screenshots`
 
 ### Spotify
 * Disable launch on login
