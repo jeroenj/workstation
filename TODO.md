@@ -113,7 +113,6 @@ default[:base][:settings][:notes] = {
   * Invisible Status Bar
   * AdBlock
   * Pocket
-* Set list of allowed java applets
 * Don't open safe files after downloading
 
 ### Terminal

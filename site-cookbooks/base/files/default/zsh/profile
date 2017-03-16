@@ -69,8 +69,6 @@ export GUARD_NOTIFY=false
 # Use personal CHEF_ENV by default
 export CHEF_ENV="openminds"
 
-export JAVA_HOME=$(/usr/libexec/java_home)
-
 export GOROOT="/usr/local/opt/go/libexec"
 export GOPATH="/Users/jeroen/Development/go"
 

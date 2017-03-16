@@ -17,7 +17,6 @@
     "recipe[base::do_dyndns]",
     "recipe[base::git]",
     "recipe[base::hostname]",
-    "recipe[base::java]",
     "recipe[reattach-to-user-namespace]",
     "recipe[base::vim]",
     "recipe[base::wakeonlan]",
