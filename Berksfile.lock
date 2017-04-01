@@ -3,17 +3,15 @@ DEPENDENCIES
     git: https://github.com/jeroenj/homebrew-cookbook.git
     revision: f01f3c98a924d38a723d7423e1dc264ecd2d5131
     branch: cask-user
-  mac-app-store
-    git: https://github.com/jeroenj/mac-app-store-chef.git
-    revision: 437d905fdf23bb90b19fd2720a34ccc1c05fd568
-    branch: homebrew-update-chef-12
+  mac-app-store (= 3.0.0)
   mac_os_x
   reattach-to-user-namespace (= 0.2.0)
 
 GRAPH
   homebrew (3.0.0)
-  mac-app-store (2.1.1)
-    reattach-to-user-namespace (~> 0.1)
+  mac-app-store (3.0.0)
+    homebrew (< 4.0)
+    reattach-to-user-namespace (~> 0.2)
   mac_os_x (1.4.6)
   reattach-to-user-namespace (0.2.0)
     homebrew (< 4.0)
