@@ -1,6 +1,6 @@
 Pry.config.prompt_name = File.basename(Dir.pwd)
 
-_pry_enable_byebug_aliases
+def _pry_enable_byebug_aliases
   if defined?(PryByebug)
     Pry.commands.alias_command 'c', 'continue'
     Pry.commands.alias_command 's', 'step'
