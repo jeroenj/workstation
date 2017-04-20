@@ -82,6 +82,7 @@
     },
     "homebrew": {
       "formulas": [
+        "ctop",
         "git",
         "git-extras",
         "htop",
