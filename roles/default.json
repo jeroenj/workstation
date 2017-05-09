@@ -112,7 +112,8 @@
       "taps": [
         "caskroom/cask",
         "caskroom/eid",
-        "caskroom/versions"
+        "caskroom/versions",
+        "buo/cask-upgrade"
       ]
     },
     "mac_os_x": {
