@@ -32,10 +32,6 @@ alias ts='tig status'
 # knife
 alias knife='nocorrect knife'
 
-# chef
-alias chef-cookstyle='docker run --rm -v `pwd`:/code gitlab.openminds.be:4567/openminds-docker/gitlab-pronto-chef rubocop --auto-correct --display-cop-names --display-style-guide -c /bundle/rubocop.yml'
-alias chef-foodcritic='docker run --rm -v `pwd`:/code gitlab.openminds.be:4567/openminds-docker/gitlab-pronto-chef foodcritic'
-
 # ifconfig
 alias ip='ifconfig | grep "inet " | grep -v 127.0.0.1 | cut -d\  -f2'
 alias rip='curl ipecho.net/plain ; echo'
@@ -44,6 +40,12 @@ alias rip='curl ipecho.net/plain ; echo'
 alias dc='docker-compose'
 alias dm='docker-machine'
 
+# linting
+alias chef-cookstyle='docker run --rm -v `pwd`:/code gitlab.openminds.be:4567/openminds-docker/gitlab-pronto-chef rubocop --display-cop-names --display-style-guide -c /bundle/rubocop.yml'
+alias chef-foodcritic='docker run --rm -v `pwd`:/code gitlab.openminds.be:4567/openminds-docker/gitlab-pronto-chef foodcritic'
+alias dev-rubocop='docker run --rm -it -v `pwd`:/code gitlab.openminds.be:4567/openminds-docker/gitlab-pronto-dev rubocop'
+alias pronto-cookstyle='docker run --rm -v `pwd`:/code gitlab.openminds.be:4567/openminds-docker/gitlab-pronto-chef pronto run --exit-code --formatters text -r rubocop'
+alias pronto-foodcritic='docker run -e PRONTO_FOODCRITIC_EXCLUDE="test/**/*" --rm -v `pwd`:/code gitlab.openminds.be:4567/openminds-docker/gitlab-pronto-chef pronto run --exit-code --formatters text -r foodcritic'
 
 
 ### chruby
