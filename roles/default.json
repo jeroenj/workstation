@@ -113,7 +113,11 @@
         "caskroom/cask",
         "caskroom/eid",
         "caskroom/versions",
-        "buo/cask-upgrade"
+        "buo/cask-upgrade",
+        {
+          "tap": "openminds/private",
+          "url": "git@gitlab.openminds.be:openminds/homebrew-tap.git"
+        }
       ]
     },
     "mac_os_x": {
