@@ -1,7 +1,6 @@
 include_recipe 'homebrew'
 
 taps = %w(
-  homebrew/dupes
   caskroom/cask
   caskroom/eid
   caskroom/versions
