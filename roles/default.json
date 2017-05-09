@@ -126,6 +126,13 @@
           "LoginwindowText": "Please contact my owner if you found me."
         }
       }
+    },
+    "vagrant": {
+      "plugins": [
+        "vagrant-berkshelf",
+        "vagrant-bindfs",
+        "vagrant-omnibus"
+      ]
     }
   },
   "chef_type": "role",
