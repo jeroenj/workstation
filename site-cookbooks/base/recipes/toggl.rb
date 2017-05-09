@@ -1,1 +1,1 @@
-homebrew_cask 'toggldesktop'
+mac_app_store_app 'Toggl Desktop'
