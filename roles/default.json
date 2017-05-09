@@ -108,6 +108,11 @@
         "wget",
         "whois",
         "zsh"
+      ],
+      "taps": [
+        "caskroom/cask",
+        "caskroom/eid",
+        "caskroom/versions"
       ]
     },
     "mac_os_x": {
