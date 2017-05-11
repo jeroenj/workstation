@@ -38,7 +38,6 @@
     "recipe[base::firefox]",
     "recipe[base::firewall]",
     "recipe[base::handbrake]",
-    "recipe[base::hipchat]",
     "recipe[base::itunes]",
     "recipe[base::jubler]",
     "recipe[base::keynote]",

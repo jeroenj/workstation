@@ -47,9 +47,6 @@ Set as `NSUserKeyEquivalents` in app settings?
 * Add Mail shortcuts:
   * Send: CMD + enter
   * Archive: CMD + shift + S
-* Add HipChat shortcuts:
-  * Close Window: CMD+W
-  * Close Chat: CMD+SHIFT+W
 
 ### Preferences
 * Click in the scrollbar to: Jump to the spot that's clicked
