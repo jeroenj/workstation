@@ -61,7 +61,6 @@
     "recipe[base::slack]",
     "recipe[base::spotify]",
     "recipe[base::teamviewer]",
-    "recipe[base::telegram]",
     "recipe[base::terminal]",
     "recipe[base::tmux]",
     "recipe[base::toggl]",
