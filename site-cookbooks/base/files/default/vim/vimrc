@@ -140,5 +140,6 @@ map <Leader>tf <Plug>RunCurrentSpecFile
 map <Leader>tt <Plug>RunFocusedSpec
 map <Leader>tl <Plug>RunMostRecentSpec
 
-au BufRead,BufNewFile Berksfile,Guardfile,UserGemfile set filetype=ruby
+au BufRead,BufNewFile Berksfile,Capfile,Guardfile,UserGemfile set filetype=ruby
 au BufRead,BufNewFile Procfile,Procfile.dev set filetype=yaml
+au BufNewFile,BufRead *.srt setf srt
