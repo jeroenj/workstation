@@ -9,6 +9,9 @@ Host *
 Host *.openminds.be
 User root
 
+Host *.x-plose.be
+User root
+
 <% node[:base][:ssh][:hosts].each do |host| %>
 Host <%= host[:host] %>
 User <%= host[:user] %>
