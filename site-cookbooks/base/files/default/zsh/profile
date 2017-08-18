@@ -59,8 +59,8 @@ precmd_functions+=("chruby_auto")
 export RUBYOPT="rubygems"
 
 # vim as default text editor
-export EDITOR="vim"
-export VISUAL="vim"
+export EDITOR="nvim"
+export VISUAL="nvim"
 
 # In order to prefer homebrew's bin dir
 export PATH=/usr/local/bin:/usr/local/sbin:$PATH
