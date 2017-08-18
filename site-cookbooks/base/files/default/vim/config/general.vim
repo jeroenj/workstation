@@ -1,11 +1,5 @@
 set shell=/bin/bash
 
-execute pathogen#infect()
-Helptags
-
-" This fixes focus events in tmux in Terminal.app
-let g:vitality_always_assume_iterm = 1
-
 set clipboard=unnamed
 
 syntax on
@@ -16,26 +10,22 @@ autocmd InsertLeave * :set relativenumber
 au FocusLost * :set norelativenumber
 au FocusGained * :set relativenumber
 
-color Dracula
-set background=dark
+color dracula
 
 if $TERM == "xterm-256color"
   set t_Co=256
 end
 
+set list
+set list listchars=tab:»·,trail:·,nbsp:·
+
 set tabstop=2
 set shiftwidth=2
 set expandtab
 
-set nobackup
-set nowritebackup
-set noswapfile
-
 cnoreabbrev W w
 cnoreabbrev Q q
 cnoreabbrev Wq wq
-
-set wildignore+=*/tmp/*,*/log/*,*/rcov/*
 
 set hlsearch incsearch
 
@@ -44,9 +34,6 @@ let mapleader=","
 " Use ack instead of grep
 set grepprg=ack
 let g:grep_cmd_opts = '--noheading'
-
-" Show trailing whitespaces
-set list listchars=tab:»·,trail:·,nbsp:·
 
 " Open new split panes to right and bottom
 set splitbelow
@@ -58,36 +45,42 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+nnoremap <space> zz
+
+nnoremap <leader>n :NERDTree<CR>
+
 " Tab completion
 " will insert tab at beginning of line,
 " will use completion if not at beginning
 set wildmode=list:longest,list:full
 function! InsertTabWrapper()
-    let col = col('.') - 1
-    if !col || getline('.')[col - 1] !~ '\k'
-        return "\<tab>"
-    else
-        return "\<c-p>"
-    endif
+  let col = col('.') - 1
+  if !col || getline('.')[col - 1] !~ '\k'
+    return "\<tab>"
+  else
+    return "\<c-p>"
+  endif
 endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
-let g:syntastic_aggregate_errors = 1
-let g:syntastic_check_on_wq = 0
+let g:ale_sign_error = '!!'
+let g:ale_sign_warning = '..'
 
-command! Syn call CustomSyn()
-function! CustomSyn()
-  let g:syntastic_haml_checkers = ['haml']
-  let g:syntastic_ruby_checkers = ['mri']
-  :SyntasticCheck
+function! LinterStatus() abort
+  let l:counts = ale#statusline#Count(bufnr(''))
+
+  let l:all_errors = l:counts.error + l:counts.style_error
+  let l:all_non_errors = l:counts.total - l:all_errors
+
+  return l:counts.total == 0 ? 'OK' : printf(
+  \   '%dW %dE',
+  \   all_non_errors,
+  \   all_errors
+  \)
 endfunction
-command! SynS call CustomSynS()
-function! CustomSynS()
-  let g:syntastic_haml_checkers = ['haml', 'haml_lint']
-  let g:syntastic_ruby_checkers = ['mri', 'rubocop']
-  :SyntasticCheck
-endfunction
+
+set statusline=%{LinterStatus()}
 
 fun! <SID>StripTrailingWhitespaces()
   if exists('b:noStripWhitespace')
@@ -102,9 +95,12 @@ endfun
 autocmd BufWritePre *.conf.erb let b:noStripWhitespace=1
 autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
 
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_open_new_file = 'h'
+let g:ctrlp_show_hidden = 1
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn|chef\/local-mode-cache)|node_modules|log|rcov$',
+  \ 'file': '\v\.(swp|gif|jpg|png|pdf|rar|tar\.gz|zip)$'
+  \ }
 
 set modifiable
 
@@ -119,17 +115,6 @@ cmap w!! w !sudo tee > /dev/null %
 
 " Allow files to be modified when hidden
 set hidden
-
-" Sets files referenced by quickfix list to the arglist
-command! -nargs=0 -bar Qargs execute 'args' QuickfixFilenames()
-function! QuickfixFilenames()
-  " Building a hash ensures we get each buffer only once
-  let buffer_numbers = {}
-  for quickfix_item in getqflist()
-    let buffer_numbers[quickfix_item['bufnr']] = bufname(quickfix_item['bufnr'])
-  endfor
-  return join(map(values(buffer_numbers), 'fnameescape(v:val)'))
-endfunction
 
 " Vim tmux runner
 let g:VtrUseVtrMaps = 1
