@@ -83,7 +83,7 @@ autocmd FileType * autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespa
 let g:ctrlp_open_new_file = 'h'
 let g:ctrlp_show_hidden = 1
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn|chef\/local-mode-cache)|node_modules|log|rcov$',
+  \ 'dir':  '\v(\.git|\.hg|\.svn|\.chef\/local-mode-cache|node_modules|log|rcov|tmp)$',
   \ 'file': '\v\.(swp|gif|jpg|png|pdf|rar|tar\.gz|zip)$'
   \ }
 
