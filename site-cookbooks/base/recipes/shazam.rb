@@ -1,1 +1,1 @@
-mac_app_store_app 'Shazam'
+mac_app_store_app 'Shazam - Discover music, video & lyrics'
