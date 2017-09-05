@@ -23,5 +23,5 @@ default[:base][:chruby] = {
     { name: 'puma', version: '~> 3.7.0' },
     { name: 'rubocop', version: '~> 0.35' }
   ],
-  rubygems_version: '2.6.11'
+  rubygems_version: '2.6.13'
 }
