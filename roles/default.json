@@ -80,6 +80,7 @@
       "username": "jeroen"
     },
     "homebrew": {
+      "auto-update": false,
       "formulas": [
         "ctop",
         "git",
