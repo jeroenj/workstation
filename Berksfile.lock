@@ -3,7 +3,7 @@ DEPENDENCIES
   mac-app-store (= 3.1.0)
   mac_os_x
   reattach-to-user-namespace (= 0.3.0)
-  vagrant (= 0.7.0)
+  vagrant (= 0.7.1)
 
 GRAPH
   dmg (2.4.0)
@@ -15,8 +15,8 @@ GRAPH
   ohai (5.1.0)
   reattach-to-user-namespace (0.3.0)
     homebrew (< 5.0)
-  vagrant (0.7.0)
+  vagrant (0.7.1)
     dmg (>= 2.2.2)
     windows (>= 1.38)
-  windows (3.0.5)
+  windows (3.1.2)
     ohai (>= 4.0.0)
