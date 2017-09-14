@@ -22,7 +22,7 @@ default[:base][:chruby] = {
     { name: 'pry', version: '~> 0.10.0' },
     { name: 'pry-byebug' },
     { name: 'puma', version: '~> 3.7.0' },
-    { name: 'rubocop', version: '~> 0.35' }
+    { name: 'rubocop', version: '~> 0.48.1' }
   ],
   rubygems_version: '2.6.13'
 }
