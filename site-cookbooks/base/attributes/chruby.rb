@@ -19,7 +19,7 @@ default[:base][:chruby] = {
     { name: 'foreman' },
     { name: 'haml-lint' },
     { name: 'mysql2' },
-    { name: 'pry', version: '~> 0.10.0' },
+    { name: 'pry', version: '~> 0.11.0' },
     { name: 'pry-byebug' },
     { name: 'puma', version: '~> 3.7.0' },
     { name: 'rubocop', version: '~> 0.48.1' }
