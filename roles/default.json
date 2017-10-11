@@ -86,6 +86,7 @@
         "git",
         "git-extras",
         "htop",
+        "httpie",
         "icdiff",
         "imagemagick",
         "iperf3",
