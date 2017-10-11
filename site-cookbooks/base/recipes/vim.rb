@@ -11,6 +11,8 @@ remote_directory config_dir do
   source 'vim/config'
   owner node[:base][:username]
   group node[:base][:group]
+  files_owner node[:base][:username]
+  files_group node[:base][:group]
 end
 
 dein_dir = "#{ENV['HOME']}/.local/share/dein/repos/github.com/Shougo/dein.vim"
