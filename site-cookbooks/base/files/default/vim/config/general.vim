@@ -64,6 +64,7 @@ endfunction
 inoremap <Tab> <c-r>=InsertTabWrapper()<cr>
 inoremap <S-Tab> <c-n>
 
+let g:ale_lint_delay = 500
 let g:ale_sign_error = '!!'
 let g:ale_sign_warning = '..'
 
