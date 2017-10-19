@@ -2,35 +2,47 @@ homebrew_cask 'chefdk'
 
 chef_gem 'knife-solo'
 
-link "#{ENV['HOME']}/.chef" do
-  to "#{ENV['HOME']}/Development/openminds/chef-scripts/chef-dotfiles"
+environments_path = "#{ENV['HOME']}/.chef/environments"
+
+base_recursive_directory "#{ENV['HOME']}/.chef/environments" do
   owner node[:base][:username]
   group node[:base][:group]
 end
 
-# Disabled as ~/.chef is managed by the Openminds repository.
-# directory "#{ENV['HOME']}/.chef" do
-#   owner node[:base][:username]
-#   group node[:base][:group]
-# end
-#
-# %w(client.pem client.pub validation.pem).each do |filename|
-#   file "#{ENV['HOME']}/.chef/#{filename}" do
-#     content node[:base][:chef][filename.sub(/\./, '_')]
-#     mode 0600
-#     owner node[:base][:username]
-#     group node[:base][:group]
-#   end
-# end
-#
-# template "#{ENV['HOME']}/.chef/knife.rb" do
-#   source 'chef/knife.rb.erb'
-#   variables({
-#     cookbook_copyright: node[:base][:chef][:knife][:cookbook_copyright],
-#     cookbook_email: node[:base][:chef][:knife][:cookbook_email],
-#     cookbook_path: node[:base][:chef][:knife][:cookbook_path],
-#     node_name: node[:base][:chef][:knife][:node_name]
-#   })
-#   owner node[:base][:username]
-#   group node[:base][:group]
-# end
+node[:base][:chef][:client][:environments].each do |name, options|
+  environment_path = ::File.join(environments_path, name)
+
+  directory environment_path do
+    owner node[:base][:username]
+    group node[:base][:group]
+  end
+
+  file ::File.join(environment_path, 'client.pem') do
+    content options['private_key']
+    owner node[:base][:username]
+    group node[:base][:group]
+    mode 0600
+    sensitive true
+  end
+
+  if options['public_key']
+    file ::File.join(environment_path, 'client.pub') do
+      content options['public_key']
+      owner node[:base][:username]
+      group node[:base][:group]
+    end
+  end
+
+  file ::File.join(environment_path, 'config.yml') do
+    content options.select { |key| %w(server node_name environment cookbook_path copyright email).include?(key) }.to_yaml
+    owner node[:base][:username]
+    group node[:base][:group]
+  end
+end
+
+template "#{ENV['HOME']}/.chef/knife.rb" do
+  source 'chef/knife.rb.erb'
+  variables default_chef_environment: node[:base][:chef][:client][:default_environment]
+  owner node[:base][:username]
+  group node[:base][:group]
+end

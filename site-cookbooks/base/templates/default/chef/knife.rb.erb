@@ -1,13 +1,17 @@
-client_key '~/.chef/client.pem'
-validation_key '~/.chef/validation.pem'
-chef_server_cert '~/.chef/chef-server.cert'
-chef_server_url 'localhost'
-cookbook_copyright '<%= @cookbook_copyright %>'
-cookbook_email '<%= @cookbook_email %>'
-cookbook_path '<%= @cookbook_path %>'
-environment 'production'
-node_name '<%= @node_name %>'
-validation_client_name 'chef-validator'
+require 'yaml'
+
+chef_env = ENV['CHEF_ENV'] || '<%= @default_chef_environment %>'
+chef_dir = "#{ENV['HOME']}/.chef/environments/#{chef_env}"
+config = YAML.load_file("#{chef_dir}/config.yml")
+
+client_key "#{chef_dir}/client.pem"
+validation_key "#{chef_dir}/validation.pem"
+chef_server_url(config['server']) if config['server']
+node_name config['node_name']
+environment config['environment']
+cookbook_path config['cookbook_path']
+cookbook_copyright config['copyright']
+cookbook_email config['email']
 
 log_level :info
 log_location STDOUT
