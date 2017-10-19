@@ -40,8 +40,8 @@ node[:base][:chef][:client][:environments].each do |name, options|
   end
 end
 
-template "#{ENV['HOME']}/.chef/knife.rb" do
-  source 'chef/knife.rb.erb'
+template "#{ENV['HOME']}/.chef/config.rb" do
+  source 'chef/config.rb.erb'
   variables default_chef_environment: node[:base][:chef][:client][:default_environment]
   owner node[:base][:username]
   group node[:base][:group]
