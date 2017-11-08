@@ -1,4 +1,4 @@
-default[:base][:chruby] = {
+default[:base][:ruby] = {
   path: '/opt/rubies',
   rubies: %w(
     2.4.2

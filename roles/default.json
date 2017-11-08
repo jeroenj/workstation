@@ -10,7 +10,6 @@
     "recipe[base::prezto]",
     "recipe[base::mariadb]",
     "recipe[base::ruby]",
-    "recipe[base::chruby]",
 
     "recipe[base::mas]",
     "recipe[base::airport]",
