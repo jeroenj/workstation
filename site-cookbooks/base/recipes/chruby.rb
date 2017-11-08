@@ -47,10 +47,8 @@ file "#{ENV['HOME']}/.ruby-version" do
   group node[:base][:group]
 end
 
-if node[:recipes].include?('base::pow')
-  template "#{ENV['HOME']}/.powconfig" do
-    source 'chruby/powconfig'
-    owner node[:base][:username]
-    group node[:base][:group]
-  end
+template "#{ENV['HOME']}/.powconfig" do
+  source 'chruby/powconfig'
+  owner node[:base][:username]
+  group node[:base][:group]
 end
