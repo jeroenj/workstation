@@ -5,9 +5,3 @@
     group node[:base][:group]
   end
 end
-
-node[:base][:ruby][:gems].each do |gem|
-  gem_package gem[:name] do
-    version gem[:version]
-  end
-end
