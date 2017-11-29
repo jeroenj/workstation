@@ -1,1 +1,1 @@
-default[:base][:chef][:client][:default_environment] = 'openminds'
+default[:base][:chef][:client][:default_environment] = 'personal'

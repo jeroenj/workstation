@@ -5,8 +5,9 @@ execute 'Set default shell to zsh' do
   not_if { `printf $SHELL` == '/bin/zsh' }
 end
 
-cookbook_file "#{ENV['HOME']}/.profile" do
-  source "zsh/profile"
+template "#{ENV['HOME']}/.profile" do
+  source 'zsh/profile.erb'
+  variables chef_env: node[:base][:chef][:client][:default_environment]
   user node[:base][:username]
   group node[:base][:group]
 end
