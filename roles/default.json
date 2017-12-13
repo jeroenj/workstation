@@ -64,7 +64,6 @@
     "recipe[base::terminal]",
     "recipe[base::tmux]",
     "recipe[base::toggl]",
-    "recipe[base::transmission]",
     "recipe[base::tunnelblick]",
     "recipe[base::typora]",
     "recipe[base::user_aliases]",
