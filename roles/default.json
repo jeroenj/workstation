@@ -8,7 +8,6 @@
     "recipe[base::xquartz]",
     "recipe[base::ssh]",
     "recipe[base::prezto]",
-    "recipe[base::mariadb]",
     "recipe[base::ruby]",
 
     "recipe[base::mas]",
