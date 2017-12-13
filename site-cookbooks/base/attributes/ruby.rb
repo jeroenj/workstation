@@ -18,7 +18,6 @@ default[:base][:ruby] = {
     { name: 'explain_shell' },
     { name: 'foreman' },
     { name: 'haml-lint' },
-    { name: 'mysql2' },
     { name: 'pry', version: '~> 0.11.2' },
     { name: 'pry-byebug' },
     { name: 'puma', version: '~> 3.7.0' },
