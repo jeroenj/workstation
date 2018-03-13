@@ -29,6 +29,7 @@ set runtimepath+=~/.local/share/dein/repos/github.com/Shougo/dein.vim
   call dein#add('scrooloose/nerdtree')
   call dein#add('sjl/vitality.vim')
   call dein#add('skwp/greplace.vim')
+  call dein#add('slim-template/vim-slim')
   call dein#add('tomtom/tcomment_vim')
   call dein#add('tpope/vim-endwise')
   call dein#add('tpope/vim-eunuch')
