@@ -62,7 +62,6 @@
     "recipe[base::teamviewer]",
     "recipe[base::terminal]",
     "recipe[base::tmux]",
-    "recipe[base::toggl]",
     "recipe[base::tunnelblick]",
     "recipe[base::typora]",
     "recipe[base::user_aliases]",
