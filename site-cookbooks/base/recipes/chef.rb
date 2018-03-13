@@ -1,7 +1,5 @@
 homebrew_cask 'chefdk'
 
-chef_gem 'knife-solo'
-
 environments_path = "#{ENV['HOME']}/.chef/environments"
 
 base_recursive_directory "#{ENV['HOME']}/.chef/environments" do
