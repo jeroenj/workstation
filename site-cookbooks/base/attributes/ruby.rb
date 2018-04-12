@@ -14,7 +14,6 @@ default[:base][:ruby] = {
     { name: 'cheat' },
     { name: 'explain_shell' },
     { name: 'foreman' },
-    { name: 'haml-lint' },
     { name: 'pry', version: '~> 0.11.2' },
     { name: 'pry-byebug' },
     { name: 'puma', version: '~> 3.7.0' },
