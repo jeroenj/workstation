@@ -1,9 +1,10 @@
 default[:base][:ruby] = {
   path: '/opt/rubies',
   rubies: %w(
+    2.5.1
+    2.4.4
     2.4.3
-    2.4.2
-    2.3.6
+    2.3.7
     2.1.9
     2.0.0-p648
   ),
