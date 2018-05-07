@@ -1,5 +1,5 @@
 DEPENDENCIES
-  homebrew (= 4.2.0)
+  homebrew (= 5.0.4)
   mac-app-store
     git: https://github.com/jeroenj/mac-app-store-chef.git
     revision: 8e22418ee6f8b5f5afee69de60ccdf24612b091b
@@ -15,7 +15,7 @@ DEPENDENCIES
 
 GRAPH
   dmg (2.4.0)
-  homebrew (4.2.0)
+  homebrew (5.0.4)
   mac-app-store (3.1.1)
     reattach-to-user-namespace (~> 0.2)
   mac_os_x (1.4.5)
