@@ -1,6 +1,9 @@
 DEPENDENCIES
   homebrew (= 4.2.0)
-  mac-app-store (= 3.1.0)
+  mac-app-store
+    git: https://github.com/jeroenj/mac-app-store-chef.git
+    revision: 8e22418ee6f8b5f5afee69de60ccdf24612b091b
+    branch: homebrew-update-chef-12
   mac_os_x
     git: https://github.com/sous-chefs/mac_os_x.git
     revision: 3ec219aff7ddf4db47e532009761dc3364ca1e2e
@@ -10,8 +13,7 @@ DEPENDENCIES
 GRAPH
   dmg (2.4.0)
   homebrew (4.2.0)
-  mac-app-store (3.1.0)
-    homebrew (< 5.0)
+  mac-app-store (3.1.1)
     reattach-to-user-namespace (~> 0.2)
   mac_os_x (1.4.5)
   ohai (5.2.0)
