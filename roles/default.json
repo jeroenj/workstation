@@ -109,8 +109,7 @@
         "homebrew/cask",
         "homebrew/cask-drivers",
         "homebrew/cask-eid",
-        "homebrew/cask-versions",
-        "buo/cask-upgrade"
+        "homebrew/cask-versions"
       ]
     },
     "mac_os_x": {
