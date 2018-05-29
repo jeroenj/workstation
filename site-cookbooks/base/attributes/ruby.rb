@@ -10,7 +10,7 @@ default[:base][:ruby] = {
   ),
   default: '2.5.1',
   gems: [
-    { name: 'bundler', version: '~> 1.16.1' },
+    { name: 'bundler', version: '~> 1.16.2' },
     { name: 'bundler-audit', version: '~> 0.5.0' },
     { name: 'cheat' },
     { name: 'explain_shell' },
