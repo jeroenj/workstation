@@ -106,9 +106,10 @@
         "zsh"
       ],
       "taps": [
-        "caskroom/cask",
-        "caskroom/eid",
-        "caskroom/versions",
+        "homebrew/cask",
+        "homebrew/cask-drivers",
+        "homebrew/cask-eid",
+        "homebrew/cask-versions",
         "buo/cask-upgrade"
       ]
     },
