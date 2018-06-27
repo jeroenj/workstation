@@ -177,9 +177,6 @@ default[:mac_os_x][:settings][:'1password_extension'] = {
 ### AppCleaner
 * SmartDelete
 
-### Charles
-* License
-
 ### Cheatsheet
 * enable access for assistive devices in System Preferences - Accessibility
 * enable as login item
