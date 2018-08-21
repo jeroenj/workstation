@@ -15,18 +15,15 @@ remote_directory config_dir do
   files_group node[:base][:group]
 end
 
-dein_dir = "#{ENV['HOME']}/.local/share/dein/repos/github.com/Shougo/dein.vim"
+autoload_dir = "#{ENV['HOME']}/.local/share/nvim/site/autoload"
 
-base_recursive_directory dein_dir do
+base_recursive_directory autoload_dir do
   owner node[:base][:username]
   group node[:base][:group]
 end
 
-git dein_dir do
-  repository 'https://github.com/Shougo/dein.vim'
-  action :checkout
-  checkout_branch 'master'
-  enable_checkout false
+remote_file "#{autoload_dir}/plug.vim" do
+  source 'https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   user node[:base][:username]
   group node[:base][:group]
 end
