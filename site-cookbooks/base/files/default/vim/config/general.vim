@@ -10,6 +10,7 @@ autocmd InsertLeave * :set relativenumber
 au FocusLost * :set norelativenumber
 au FocusGained * :set relativenumber
 
+let g:dracula_colorterm = 0
 color dracula
 
 if $TERM == "xterm-256color"
