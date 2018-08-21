@@ -26,6 +26,7 @@ set runtimepath+=~/.local/share/dein/repos/github.com/Shougo/dein.vim
   call dein#add('kchmck/vim-coffee-script')
   call dein#add('mileszs/ack.vim')
   call dein#add('pangloss/vim-javascript')
+  call dein#add('rhysd/vim-crystal')
   call dein#add('rorymckinley/vim-symbols-strings')
   call dein#add('scrooloose/nerdtree')
   call dein#add('sjl/vitality.vim')
