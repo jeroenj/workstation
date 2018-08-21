@@ -78,6 +78,7 @@
       "auto-update": false,
       "formulas": [
         "ctop",
+        "fzf",
         "git",
         "git-extras",
         "htop",
