@@ -2,7 +2,6 @@ call plug#begin('~/.local/share/plug')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-runner'
-Plug 'ctrlpvim/ctrlp.vim'
 Plug 'dracula/vim'
 Plug 'easymotion/vim-easymotion'
 Plug 'editorconfig/editorconfig-vim'
