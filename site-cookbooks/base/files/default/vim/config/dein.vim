@@ -39,6 +39,7 @@ set runtimepath+=~/.local/share/dein/repos/github.com/Shougo/dein.vim
   call dein#add('vim-airline/vim-airline')
   call dein#add('w0rp/ale')
   call dein#add('wesQ3/vim-windowswap')
+  call dein#add('wsdjeg/dein-ui.vim')
   call dein#add('yaymukund/vim-rabl')
 
   " Required:
