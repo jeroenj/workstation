@@ -22,6 +22,8 @@ set runtimepath+=~/.local/share/dein/repos/github.com/Shougo/dein.vim
   call dein#add('editorconfig/editorconfig-vim')
   call dein#add('fatih/vim-go')
   call dein#add('gabebw/vim-spec-runner')
+  call dein#add('junegunn/fzf', { 'build': './install', 'merged': 0 })
+  call dein#add('junegunn/fzf.vim', { 'depends': 'fzf' })
   call dein#add('kchmck/vim-coffee-script')
   call dein#add('mileszs/ack.vim')
   call dein#add('pangloss/vim-javascript')

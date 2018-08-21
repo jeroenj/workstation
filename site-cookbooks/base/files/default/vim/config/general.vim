@@ -89,6 +89,8 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\v\.(swp|gif|jpg|png|pdf|rar|tar\.gz|zip)$'
   \ }
 
+nnoremap ,ff :FZF<cr>
+
 set modifiable
 
 let g:gitgutter_realtime = 0
