@@ -16,7 +16,6 @@ set runtimepath+=~/.local/share/dein/repos/github.com/Shougo/dein.vim
   " Add or removepo your plugins here:
   call dein#add('airblade/vim-gitgutter')
   call dein#add('christoomey/vim-tmux-runner')
-  call dein#add('ctrlpvim/ctrlp.vim')
   call dein#add('dracula/vim')
   call dein#add('easymotion/vim-easymotion')
   call dein#add('editorconfig/editorconfig-vim')

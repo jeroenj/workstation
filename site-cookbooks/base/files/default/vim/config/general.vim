@@ -90,6 +90,7 @@ let g:ctrlp_custom_ignore = {
   \ }
 
 nnoremap ,ff :FZF<cr>
+nnoremap <C-P> :FZF<cr>
 
 set modifiable
 
