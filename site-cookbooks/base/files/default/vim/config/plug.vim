@@ -1,4 +1,4 @@
-call plug#begin('~/.local/share/plug')
+call plug#begin('~/.local/share/nvim/plug')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'christoomey/vim-tmux-runner'
