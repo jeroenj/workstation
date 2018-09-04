@@ -15,8 +15,6 @@ default[:base][:ruby] = {
     { name: 'explain_shell' },
     { name: 'foreman' },
     { name: 'pry', version: '~> 0.11.2' },
-    { name: 'pry-byebug' },
-    { name: 'puma', version: '~> 3.7.0' },
     { name: 'rubocop', version: '~> 0.48.1' }
   ],
   rubygems_version: '2.7.7'
