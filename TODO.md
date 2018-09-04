@@ -5,15 +5,17 @@
 * create `/Users/jeroen/Library/LaunchAgents/`
 * Show Volume and BlueTooth icons
 
+### Accessibility
+* Zoom settings
+
 ### Dock
 * Only restart Dock if actual changes happened in Dock settings
 
 ### Firewall
 * Allow DDService64d (Drobo Dashboard)
 
-### Language & Text
-* Languages order
-* Region: change Numbers (decimal point and comma separator)
+### Language & Region
+* Advanced: change separators to spaces for groupping and `.` for decimals
 
 ### Screensaver
 * `'idleTime' => 300`
@@ -39,11 +41,6 @@ Set as `NSUserKeyEquivalents` in app settings?
 * Disable ^ up/down
 * Enable ^1 to switch to desktop 1
 * Disable spotlight shortcuts
-* Add Skype shortcuts:
-  * Close Window: CMD+W
-  * Close Conversation: CMD+SHIFT+W
-  * Previous Conversation: CMD+SHIFT+[
-  * Next Conversation: CMD+SHIFT+]
 * Add Mail shortcuts:
   * Send: CMD + enter
   * Archive: CMD + shift + S
@@ -62,9 +59,6 @@ Set as `NSUserKeyEquivalents` in app settings?
 
 ### Services
 * Screen sharing
-
-### Text formatting
-* Change region settings (decimal point, etc.)
 
 ## System apps
 
@@ -94,23 +88,9 @@ Set as `NSUserKeyEquivalents` in app settings?
 * Dock count: VIP Inbox
 * Customize toolbar
 
-### Notes
-* Change default font:
-```ruby
-default[:base][:settings][:notes] = {
-  'domain' => "#{ENV['HOME']}/Library/Containers/com.apple.Notes/Data/Library/Preferences/com.apple.Notes.plist",
-  'NoteFont' => "<62706c69 73743030 d4010203 04050618 19582476 65727369 6f6e5824 6f626a65 63747359 24617263 68697665 72542474 6f701200 0186a0a4 07081112 55246e75 6c6cd409 0a0b0c0d 0e0f1056 4e535369 7a65584e 5366466c 61677356 4e534e61 6d655624 636c6173 7323402c 00000000 00001010 80028003 5948656c 76657469 6361d213 1415165a 24636c61 73736e61 6d655824 636c6173 73657356 4e53466f 6e74a215 17584e53 4f626a65 63745f10 0f4e534b 65796564 41726368 69766572 d11a1b54 726f6f74 80010811 1a232d32 373c424b 525b6269 72747678 8287929b a2a5aec0 c3c80000 00000000 01010000 00000000 001c0000 00000000 00000000 00000000 00ca>" # type: data
-}
-```
-
 ### Safari
-* Hide bookmarks bar
-* Customize toolbar
 * Extensions
-  * Invisible Status Bar
-  * AdBlock
-  * Pocket
-* Don't open safe files after downloading
+  * Ghostery
 
 ### Terminal
 * Preferences
