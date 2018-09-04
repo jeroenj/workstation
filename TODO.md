@@ -231,15 +231,9 @@ end
 end
 ```
 
-### Transmission
-* Keychain asks for password if it's not set
-
 ### Tunnelblick
 * Preferences
 * Configs
-
-### VLC
-* Preferences
 
 ### VPN
 * output for keychain password check
