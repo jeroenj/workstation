@@ -67,8 +67,7 @@
     "recipe[base::vagrant]",
     "recipe[base::virtualbox]",
     "recipe[base::vlc]",
-    "recipe[base::whatsapp]",
-    "recipe[base::wunderlist]"
+    "recipe[base::whatsapp]"
   ],
   "default_attributes": {
     "base": {
