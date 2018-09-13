@@ -48,7 +48,6 @@
     "recipe[base::pixelmator]",
     "recipe[base::pocket]",
     "recipe[base::postgresql]",
-    "recipe[base::postico]",
     "recipe[base::puma_dev]",
     "recipe[base::reeder]",
     "recipe[base::resilio]",
