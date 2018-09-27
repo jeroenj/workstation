@@ -7,6 +7,7 @@ DEPENDENCIES
   mac_os_x
     git: https://github.com/sous-chefs/mac_os_x.git
     revision: 3ec219aff7ddf4db47e532009761dc3364ca1e2e
+  macos
   reattach-to-user-namespace
     git: https://github.com/jeroenj/reattach-to-user-namespace-chef.git
     revision: 57d1ba0e7c4ea90064769a64aafa742c6f7cd7fc
@@ -19,6 +20,7 @@ GRAPH
   mac-app-store (3.1.1)
     reattach-to-user-namespace (~> 0.2)
   mac_os_x (1.4.5)
+  macos (2.5.0)
   reattach-to-user-namespace (0.3.1)
   vagrant (0.7.1)
     dmg (>= 2.2.2)

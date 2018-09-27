@@ -1,5 +1,10 @@
 # TODO
 
+## Settings
+* move `node[:base][:settings]` to `node[:base][:plist_settings]`
+* remove `mac_os_x` cookbook
+* rename `:plist_settings` to `:settings`
+
 ## System
 
 * create `/Users/jeroen/Library/LaunchAgents/`

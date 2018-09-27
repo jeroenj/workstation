@@ -1,7 +1,8 @@
 {
   "run_list": [
     "role[default]",
-    "recipe[base::settings]"
+    "recipe[base::settings]",
+    "recipe[base::plist_settings]"
   ],
   "base": {
     "hostname": "jeroen-mbp"
