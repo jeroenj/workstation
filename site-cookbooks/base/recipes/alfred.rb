@@ -1,4 +1,4 @@
-# include base::settings at the end of the run list to include settings
+# include base::plist_settings at the end of the run list to include settings
 
 homebrew_cask 'alfred2'
 
