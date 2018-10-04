@@ -1,6 +1,6 @@
 source 'https://supermarket.getchef.com'
 
-cookbook 'homebrew', '5.0.7'
+cookbook 'homebrew', '5.0.8'
 cookbook 'mac-app-store', '3.1.1', github: 'jeroenj/mac-app-store-chef', branch: 'homebrew-update-chef-12'
 cookbook 'mac_os_x', github: 'sous-chefs/mac_os_x', commit: '3ec219a'
 cookbook 'macos'
