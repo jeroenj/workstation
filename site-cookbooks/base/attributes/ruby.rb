@@ -11,7 +11,6 @@ default[:base][:ruby] = {
   gems: [
     { name: 'bundler', version: '~> 1.16.5' },
     { name: 'bundler-audit', version: '~> 0.6.0' },
-    { name: 'cheat' },
     { name: 'explain_shell' },
     { name: 'foreman' },
     { name: 'pry', version: '~> 0.11.2' },
