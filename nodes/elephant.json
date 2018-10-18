@@ -1,8 +1,7 @@
 {
   "run_list": [
     "role[default]",
-    "recipe[base::settings]",
-    "recipe[base::plist_settings]"
+    "recipe[base::settings]"
   ],
   "base": {
     "hostname": "Elephant",
