@@ -1,5 +1,7 @@
-default[:base][:settings][:appcleaner] = {
-  'domain' => 'com.freemacsoft.AppCleaner',
-  'SUCheckAtStartup' => true,
-  'SUEnableAutomaticChecks' => true
+default[:base][:appcleaner][:plist_settings] = {
+  domain: 'com.freemacsoft.AppCleaner',
+  settings: {
+    'SUCheckAtStartup' => true,
+    'SUEnableAutomaticChecks' => true
+  }
 }
