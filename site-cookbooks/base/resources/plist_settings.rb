@@ -8,6 +8,13 @@ action :create do
       value setting_value
     end
   end
+
+  file "#{new_resource.name} plist ownership" do
+    path plist_path
+    owner node[:base][:username]
+    group node[:base][:group]
+    only_if { user_file? }
+  end
 end
 
 action_class do
@@ -17,5 +24,9 @@ action_class do
 
   def plist_path
     config[:path] || "#{ENV['HOME']}/Library/Preferences/#{config[:domain]}.plist"
+  end
+
+  def user_file?
+    plist_path.start_with?(ENV['HOME'])
   end
 end
