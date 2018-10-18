@@ -1,6 +1,6 @@
-# include base::settings at the end of the run list to include settings
-
 homebrew_cask 'dash3'
+
+base_plist_settings 'dash'
 
 if node[:base][:dash][:license][:signature]
   directory "#{ENV['HOME']}/Library/Application Support/Dash/License" do
