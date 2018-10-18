@@ -1,6 +1,6 @@
-# include base::plist_settings at the end of the run list to include settings
-
 homebrew_cask 'alfred2'
+
+base_plist_settings 'alfred'
 
 if node[:base][:alfred][:license][:code]
   directory "#{ENV['HOME']}/Library/Application Support/Alfred 2" do
