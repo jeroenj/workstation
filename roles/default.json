@@ -17,7 +17,6 @@
     "recipe[base::hostname]",
     "recipe[reattach-to-user-namespace]",
     "recipe[base::vim]",
-    "recipe[base::wakeonlan]",
 
     "recipe[base::1password]",
     "recipe[base::ack]",
