@@ -23,7 +23,13 @@ action_class do
   end
 
   def plist_path
-    config[:path] || "#{ENV['HOME']}/Library/Preferences/#{config[:domain]}.plist"
+    if config[:container]
+      "#{ENV['HOME']}/Library/Containers/#{config[:container]}/Data/Library/Preferences/#{config[:container]}.plist"
+    elsif config[:domain]
+      "#{ENV['HOME']}/Library/Preferences/#{config[:domain]}.plist"
+    else
+      config[:path]
+    end
   end
 
   def user_file?

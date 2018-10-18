@@ -1,5 +1,5 @@
 default[:base][:'1password'][:plist_settings] = {
-  path: "#{ENV['HOME']}/Library/Containers/com.agilebits.onepassword-osx/Data/Library/Preferences/com.agilebits.onepassword-osx.plist",
+  container: 'com.agilebits.onepassword-osx',
   settings: {
     'CompletedEssentialSettings' => true,
     'Enable3rdPartyIntegration' => true,
