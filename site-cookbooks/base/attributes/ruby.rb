@@ -8,7 +8,7 @@ default[:base][:ruby] = {
     2.1.9
     2.0.0-p648
   ),
-  default: '2.5.1',
+  default: '2.5.3',
   gems: [
     { name: 'bundler', version: '~> 1.16.6' },
     { name: 'bundler-audit', version: '~> 0.6.0' },
