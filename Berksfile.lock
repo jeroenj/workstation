@@ -20,7 +20,7 @@ GRAPH
   mac-app-store (3.1.1)
     reattach-to-user-namespace (~> 0.2)
   mac_os_x (1.4.5)
-  macos (2.6.1)
+  macos (2.7.0)
   reattach-to-user-namespace (0.3.1)
   vagrant (0.7.1)
     dmg (>= 2.2.2)
