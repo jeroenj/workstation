@@ -182,6 +182,7 @@ default[:mac_os_x][:settings][:'1password_extension'] = {
 * Preferences
 
 ### Reeder
+* `"#{ENV['HOME']}/Library/Containers/com.reederapp.rkit2.mac/Data/Library/Preferences/com.reederapp.rkit2.mac.plist"`
 * All preferences (they are all dictionaries)
 
 ### Spotify
