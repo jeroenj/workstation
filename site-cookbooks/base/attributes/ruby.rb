@@ -17,5 +17,5 @@ default[:base][:ruby] = {
     { name: 'pry', version: '~> 0.11.2' },
     { name: 'rubocop', version: '~> 0.48.1' }
   ],
-  rubygems_version: '2.7.7'
+  rubygems_version: '2.7.8'
 }
