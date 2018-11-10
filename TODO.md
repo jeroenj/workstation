@@ -148,16 +148,6 @@ default[:mac_os_x][:settings][:'1password_extension'] = {
   * rm /Library/Internet Plug-Ins/AdobePDFViewer.plugin
   * rm /Library/Internet Plug-Ins/AdobePDFViewerNPAPI.plugin
 
-### Alfred
-* change keyboard shortcut to CMD + space
-```ruby
-'hotkey.default' => {
-  'key' => 49,
-  'mod' => 1048576,
-  'string' => 'Space'
-}
-```
-
 ### AppCleaner
 * SmartDelete
 
