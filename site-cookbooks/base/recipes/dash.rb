@@ -1,4 +1,4 @@
-homebrew_cask 'dash3'
+homebrew_cask 'dash'
 
 base_plist_settings 'dash'
 
