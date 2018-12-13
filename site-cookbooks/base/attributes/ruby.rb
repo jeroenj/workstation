@@ -9,7 +9,7 @@ default[:base][:ruby] = {
   ),
   default: '2.5.3',
   gems: [
-    { name: 'bundler', version: '~> 1.17.1' },
+    { name: 'bundler', version: '~> 1.17.2' },
     { name: 'bundler-audit', version: '~> 0.6.0' },
     { name: 'explain_shell' },
     { name: 'foreman' },
