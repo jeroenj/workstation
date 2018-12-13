@@ -1,4 +1,6 @@
-default[:base][:settings][:itunes] = {
-  'domain' => 'com.apple.iTunes',
-  'play-songs-while-importing' => false
+default[:base][:itunes][:plist_settings] = {
+  domain: 'com.apple.iTunes',
+  settings: {
+    'play-songs-while-importing' => false
+  }
 }
