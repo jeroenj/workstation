@@ -1,4 +1,6 @@
-default[:base][:settings][:firewall] = {
-  'domain' => '/Library/Preferences/com.apple.alf',
-  'globalstate' => 1
+default[:base][:firewall][:plist_settings] = {
+  path: '/Library/Preferences/com.apple.alf.plist',
+  settings: {
+    'globalstate' => 1
+  }
 }
