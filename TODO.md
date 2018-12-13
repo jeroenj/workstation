@@ -206,9 +206,6 @@ end
 * Preferences
 * Configs
 
-### VPN
-* output for keychain password check
-
 ## Various
 * Notification settings
 
