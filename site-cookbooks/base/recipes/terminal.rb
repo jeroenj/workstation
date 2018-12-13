@@ -1,4 +1,4 @@
-# include base::settings at the end of the run list to include settings
+base_plist_settings 'terminal'
 
 file "#{ENV['HOME']}/.hushlogin" do
   owner node[:base][:username]
