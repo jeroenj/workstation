@@ -13,7 +13,7 @@ default[:base][:ruby] = {
     { name: 'bundler-audit', version: '~> 0.6.0' },
     { name: 'explain_shell' },
     { name: 'foreman' },
-    { name: 'pry', version: '~> 0.11.2' },
+    { name: 'pry', version: '~> 0.12.2' },
     { name: 'rubocop', version: '~> 0.48.1' }
   ],
   rubygems_version: '2.7.8'
