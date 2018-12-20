@@ -15,11 +15,6 @@ default[:mac_os_x][:settings][:global] = {
   'PMPrintingExpandedStateForPrint2' => true
 }
 
-default[:mac_os_x][:settings][:clock] = {
-  'domain' => 'com.apple.menuextra.clock',
-  'DateFormat' => 'EEE d MMM  HH:mm'
-}
-
 default[:mac_os_x][:settings][:dock] = {
   'domain' => 'com.apple.dock',
   'largesize' => 80,
