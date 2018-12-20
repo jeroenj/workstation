@@ -26,6 +26,7 @@
     "recipe[base::calendar]",
     "recipe[base::chef]",
     "recipe[base::chrome]",
+    "recipe[base::clock]",
     "recipe[base::dash]",
     "recipe[base::divvy]",
     "recipe[base::docker]",

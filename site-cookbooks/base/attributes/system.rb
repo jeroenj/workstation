@@ -17,11 +17,11 @@ default[:mac_os_x][:settings][:global] = {
 
 default[:mac_os_x][:settings][:dock] = {
   'domain' => 'com.apple.dock',
-  'largesize' => 80,
+  'largesize' => 72,
   'magnification' => true,
   'minimize-to-application' => true,
   'showhidden' => true,
-  'tilesize' => 48
+  'tilesize' => 40
 }
 
 default[:mac_os_x][:settings][:keyboard] = {
