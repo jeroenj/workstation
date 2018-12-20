@@ -29,6 +29,7 @@
     "recipe[base::clock]",
     "recipe[base::dash]",
     "recipe[base::divvy]",
+    "recipe[base::dock]",
     "recipe[base::docker]",
     "recipe[base::doxie]",
     "recipe[base::drobo]",

@@ -4,7 +4,14 @@
     "recipe[base::settings]"
   ],
   "base": {
-    "hostname": "jeroen-mbp"
+    "hostname": "jeroen-mbp",
+    "clock": {
+      "plist_settings": {
+        "settings": {
+          "tilesize": 40
+        }
+      }
+    }
   },
   "mac_os_x": {
     "settings": {

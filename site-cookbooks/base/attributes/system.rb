@@ -15,15 +15,6 @@ default[:mac_os_x][:settings][:global] = {
   'PMPrintingExpandedStateForPrint2' => true
 }
 
-default[:mac_os_x][:settings][:dock] = {
-  'domain' => 'com.apple.dock',
-  'largesize' => 72,
-  'magnification' => true,
-  'minimize-to-application' => true,
-  'showhidden' => true,
-  'tilesize' => 40
-}
-
 default[:mac_os_x][:settings][:keyboard] = {
   'domain' => '.GlobalPreferences',
   'KeyRepeat' => 2,
