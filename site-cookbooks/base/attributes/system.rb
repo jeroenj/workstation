@@ -41,11 +41,6 @@ default[:mac_os_x][:settings][:screencapture] = {
   'location' => "#{ENV['HOME']}/Library/Mobile\ Documents/com\~apple\~CloudDocs/Screenshots"
 }
 
-default[:mac_os_x][:settings][:screensaver] = {
-  'domain' => 'com.apple.screensaver',
-  'askForPasswordDelay' => 3600
-}
-
 default[:mac_os_x][:settings][:time_machine] = {
   'domain' => 'com.apple.systempreferences',
   'TMShowUnsupportedNetworkVolumes' => true

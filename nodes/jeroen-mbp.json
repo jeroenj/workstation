@@ -11,12 +11,12 @@
           "tilesize": 40
         }
       }
-    }
-  },
-  "mac_os_x": {
-    "settings": {
-      "screensaver": {
-        "askForPasswordDelay": 5
+    },
+    "screensaver": {
+      "plist_settings": {
+        "settings": {
+          "askForPasswordDelay": 5
+        }
       }
     }
   }

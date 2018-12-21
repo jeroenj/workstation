@@ -53,6 +53,7 @@
     "recipe[base::reeder]",
     "recipe[base::resilio]",
     "recipe[base::safari]",
+    "recipe[base::screensaver]",
     "recipe[base::shazam]",
     "recipe[base::skype]",
     "recipe[base::slack]",
