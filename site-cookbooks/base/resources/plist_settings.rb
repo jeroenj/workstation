@@ -6,14 +6,9 @@ action :create do
       path plist_path
       entry setting_entry
       value setting_value
+      owner node[:base][:username] if user_file?
+      group node[:base][:group] if user_file?
     end
-  end
-
-  file "#{new_resource.name} plist ownership" do
-    path plist_path
-    owner node[:base][:username]
-    group node[:base][:group]
-    only_if { user_file? }
   end
 end
 
