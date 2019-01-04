@@ -36,11 +36,6 @@ default[:mac_os_x][:settings][:network_storage] = {
   'DSDontWriteNetworkStores' => true
 }
 
-default[:mac_os_x][:settings][:time_machine] = {
-  'domain' => 'com.apple.systempreferences',
-  'TMShowUnsupportedNetworkVolumes' => true
-}
-
 default[:mac_os_x][:settings][:trackpad] = {
   'domain' => 'com.apple.AppleMultitouchTrackpad',
   'Clicking' => true,
