@@ -31,9 +31,11 @@ default[:mac_os_x][:settings][:login] = {
   'GuestEnabled' => true
 }
 
-default[:mac_os_x][:settings][:network_storage] = {
-  'domain' => '/Library/Preferences/com.apple.desktopservices',
-  'DSDontWriteNetworkStores' => true
+default[:base][:network_storage][:plist_settings] = {
+  path: '/Library/Preferences/com.apple.desktopservices.plist',
+  settings: {
+    'DSDontWriteNetworkStores' => true
+  }
 }
 
 default[:base][:trackpad_builtin][:plist_settings] = {

@@ -1,7 +1,8 @@
 include_recipe 'mac_os_x::settings'
 
-base_plist_settings 'trackpad_builtin'
-base_plist_settings 'trackpad_external'
+%w(network_storage trackpad_builtin trackpad_external).each do |settings_name|
+  base_plist_settings settings_name
+end
 
 execute 'Show library' do
   command "chflags nohidden #{ENV['HOME']}/Library"
