@@ -26,9 +26,11 @@ default[:mac_os_x][:settings][:light_sensor] = {
   'Automatic Display Enabled' => false
 }
 
-default[:mac_os_x][:settings][:login] = {
-  'domain' => '/Library/Preferences/com.apple.loginwindow',
-  'GuestEnabled' => true
+default[:base][:login][:plist_settings] = {
+  path: '/Library/Preferences/com.apple.loginwindow.plist',
+  settings: {
+    'GuestEnabled' => true
+  }
 }
 
 default[:base][:network_storage][:plist_settings] = {
