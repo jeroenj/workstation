@@ -1,6 +1,6 @@
 include_recipe 'mac_os_x::settings'
 
-%w(login network_storage trackpad_builtin trackpad_external).each do |settings_name|
+%w(light_sensor login network_storage trackpad_builtin trackpad_external).each do |settings_name|
   base_plist_settings settings_name
 end
 

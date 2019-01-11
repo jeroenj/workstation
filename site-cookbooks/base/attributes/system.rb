@@ -21,9 +21,11 @@ default[:mac_os_x][:settings][:keyboard] = {
   'InitialKeyRepeat' => 15
 }
 
-default[:mac_os_x][:settings][:light_sensor] = {
-  'domain' => '/Library/Preferences/com.apple.iokit.AmbientLightSensor',
-  'Automatic Display Enabled' => false
+default[:base][:light_sensor][:plist_settings] = {
+  path: '/Library/Preferences/com.apple.iokit.AmbientLightSensor.plist',
+  settings: {
+    'Automatic Display Enabled' => false
+  }
 }
 
 default[:base][:login][:plist_settings] = {
