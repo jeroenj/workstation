@@ -1,5 +1,8 @@
 include_recipe 'mac_os_x::settings'
 
+base_plist_settings 'trackpad_builtin'
+base_plist_settings 'trackpad_external'
+
 execute 'Show library' do
   command "chflags nohidden #{ENV['HOME']}/Library"
   user node[:base][:username]
