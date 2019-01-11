@@ -3,22 +3,20 @@ default[:base][:system][:remote_login] = true
 default[:base][:system][:wake_on_network_access] = true
 default[:base][:system][:restart_power_failure] = false
 
-default[:mac_os_x][:settings][:global] = {
-  'domain' => 'NSGlobalDomain',
-  'AppleInterfaceStyle' => 'Dark',
-  'com.apple.sound.beep.feedback' => 1,
-  'NSAllowContinuousSpellChecking' => false,
-  'NSDocumentSaveNewDocumentsToCloud' => false,
-  'NSNavPanelExpandedStateForSaveMode' => true,
-  'NSNavPanelExpandedStateForSaveMode2' => true,
-  'PMPrintingExpandedStateForPrint' => true,
-  'PMPrintingExpandedStateForPrint2' => true
-}
-
-default[:mac_os_x][:settings][:keyboard] = {
-  'domain' => '.GlobalPreferences',
-  'KeyRepeat' => 2,
-  'InitialKeyRepeat' => 15
+default[:base][:global_domain][:plist_settings] = {
+  domain: '.GlobalPreferences',
+  settings: {
+    'AppleInterfaceStyle' => 'Dark',
+    'com.apple.sound.beep.feedback' => 1,
+    'KeyRepeat' => 2,
+    'InitialKeyRepeat' => 15,
+    'NSAllowContinuousSpellChecking' => false,
+    'NSDocumentSaveNewDocumentsToCloud' => false,
+    'NSNavPanelExpandedStateForSaveMode' => true,
+    'NSNavPanelExpandedStateForSaveMode2' => true,
+    'PMPrintingExpandedStateForPrint' => true,
+    'PMPrintingExpandedStateForPrint2' => true
+  }
 }
 
 default[:base][:light_sensor][:plist_settings] = {
