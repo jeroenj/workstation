@@ -10,13 +10,6 @@ execute 'Show library' do
   only_if { `stat #{ENV['HOME']}/Library` =~ /0x8000 #{ENV['HOME'].gsub /\//, '\/'}\/Library/ }
 end
 
-directory "#{ENV['HOME']}/Downloads/About Downloads.lpdf" do
-  recursive true
-  owner node[:base][:username]
-  group node[:base][:group]
-  action :delete
-end
-
 services = {
   remote_login: 'remotelogin',
   wake_on_network_access: 'wakeonnetworkaccess',
