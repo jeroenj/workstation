@@ -108,8 +108,7 @@
       "taps": [
         "homebrew/cask",
         "homebrew/cask-drivers",
-        "homebrew/cask-eid",
-        "homebrew/cask-versions"
+        "homebrew/cask-eid"
       ]
     },
     "mac_os_x": {
