@@ -109,12 +109,10 @@
         "homebrew/cask",
         "homebrew/cask-drivers",
         "homebrew/cask-eid"
-      ]
-    },
-    "mac_os_x": {
-      "settings": {
-        "login": {
-          "LoginwindowText": "Please contact my owner if you found me."
+      ],
+      "login": {
+        "settings": {
+          "LoginwindowText": "Please contact my owner at +32 472 348 310 or mac@jeroenj.be if you found me."
         }
       }
     },
