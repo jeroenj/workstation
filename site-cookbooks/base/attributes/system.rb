@@ -1,4 +1,3 @@
-default[:mac_os_x][:settings_user] = node[:base][:username]
 default[:base][:system][:remote_login] = true
 default[:base][:system][:wake_on_network_access] = true
 default[:base][:system][:restart_power_failure] = false

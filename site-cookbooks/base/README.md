@@ -11,7 +11,6 @@ This cookbook has been built to work on Mac OS X and is only tested on El Capita
 
 ### cookbooks
 - `homebrew`
-- `mac_os_x`
 
 Attributes
 ----------
