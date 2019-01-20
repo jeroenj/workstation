@@ -1,38 +1,12 @@
 homebrew_cask 'drobo-dashboard'
 
+base_plist_settings 'drobo'
+
 file "#{ENV['HOME']}/.Drobo_Dashboard_installer_os_version_check_log.txt" do
   action :delete
 end
 
-settings_path = "#{ENV['HOME']}/Library/Application Support/Drobo Dashboard"
-
-base_recursive_directory ::File.expand_path('Appclicks', settings_path) do
-  owner node[:base][:username]
-  group node[:base][:group]
-end
-
-plist_preferences = {
-  'ACCleanQuit' => true,
-  'ACEnableService' => false,
-  'ACExistingUser' => true
-}
-
-plist_file = ::File.expand_path('Appclicks/appclicks.plist', settings_path)
-
-file plist_file do
-  owner node[:base][:username]
-  group node[:base][:group]
-end
-
-plist_preferences.each do |key, value|
-  mac_os_x_userdefaults "Drobo => #{key}: #{value}" do
-    domain plist_file
-    key key
-    value value
-  end
-end
-
-cookbook_file ::File.expand_path('settings.xml', settings_path) do
+cookbook_file ::File.join(node[:base][:drobo][:settings_path], 'settings.xml') do
   source 'drobo/settings.xml'
   owner node[:base][:username]
   group node[:base][:group]
