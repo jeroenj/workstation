@@ -1,4 +1,5 @@
 Pry.config.prompt_name = File.basename(Dir.pwd)
+Pry.config.pager = false
 
 def _pry_enable_byebug_aliases
   if defined?(PryByebug)
