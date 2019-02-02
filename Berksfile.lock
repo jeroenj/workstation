@@ -17,7 +17,7 @@ GRAPH
   homebrew (5.0.8)
   mac-app-store (3.1.1)
     reattach-to-user-namespace (~> 0.2)
-  macos (2.10.0)
+  macos (2.10.1)
     chef-sugar (~> 5.0)
   reattach-to-user-namespace (0.3.1)
   vagrant (0.9.1)
