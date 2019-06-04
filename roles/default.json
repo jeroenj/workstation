@@ -13,7 +13,6 @@
     "recipe[base::mas]",
     "recipe[base::airport]",
     "recipe[base::do_dyndns]",
-    "recipe[base::git]",
     "recipe[base::hostname]",
     "recipe[reattach-to-user-namespace]",
     "recipe[base::vim]",
