@@ -28,5 +28,3 @@ template "#{ENV['HOME']}/.gitconfig" do
   owner node[:base][:username]
   group node[:base][:group]
 end
-
-include_recipe 'base::tig'
