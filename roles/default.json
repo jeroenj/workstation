@@ -46,7 +46,6 @@
     "recipe[base::node]",
     "recipe[base::pages]",
     "recipe[base::pixelmator]",
-    "recipe[base::pocket]",
     "recipe[base::postgresql]",
     "recipe[base::reeder]",
     "recipe[base::resilio]",
