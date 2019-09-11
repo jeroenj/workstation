@@ -89,6 +89,7 @@
         "nmap",
         "par2",
         "postgresql@9.6",
+        "postgresql@11",
         "progress",
         "pstree",
         "pwgen",
