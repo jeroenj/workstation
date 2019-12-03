@@ -16,7 +16,6 @@
 * Only restart Dock if actual changes happened in Dock settings
 
 ### Firewall
-* Allow DDService64d (Drobo Dashboard)
 
 ### Language & Region
 * Advanced: change separators to spaces for groupping and `.` for decimals
@@ -163,10 +162,6 @@ default[:mac_os_x][:settings][:'1password_extension'] = {
 ### Divvy
 * Set "Enable access for assistive devices" in Universal Access in System Preferences
 * Shortcuts: http://mizage.clarify-it.com/d/nxr9qg
-
-### Drobo Dashboard
-* remove `~/.Drobo_Dashboard_installer_os_version_check_log.txt`
-* http://support.drobo.com/app/answers/detail/a_id/624 to fix java process issue
 
 ### Google Chrome
 * Preferences
