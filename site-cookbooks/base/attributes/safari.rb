@@ -12,7 +12,6 @@ default[:base][:safari][:plist_settings] = {
     'IncludeDevelopMenu' => true,
     'NewWindowBehavior' => 4,
     'PreloadTopHit' => false,
-    'ShowFavoritesBar' => false,
     'ShowFullURLInSmartSearchField' => true,
     'TabCreationPolicy' => 2
   }
