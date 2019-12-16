@@ -5,6 +5,7 @@ default[:base][:dock][:plist_settings] = {
     'magnification' => true,
     'minimize-to-application' => true,
     'showhidden' => true,
+    'show-recents' => false,
     'tilesize' => 47
   }
 }
