@@ -10,11 +10,6 @@ default[:base][:global_domain][:plist_settings] = {
     'KeyRepeat' => 2,
     'InitialKeyRepeat' => 15,
     'NSAllowContinuousSpellChecking' => false,
-    'NSDocumentSaveNewDocumentsToCloud' => false,
-    'NSNavPanelExpandedStateForSaveMode' => true,
-    'NSNavPanelExpandedStateForSaveMode2' => true,
-    'PMPrintingExpandedStateForPrint' => true,
-    'PMPrintingExpandedStateForPrint2' => true
   }
 }
 
