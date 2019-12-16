@@ -9,7 +9,10 @@ default[:base][:global_domain][:plist_settings] = {
     'com.apple.sound.beep.feedback' => 1,
     'KeyRepeat' => 2,
     'InitialKeyRepeat' => 15,
-    'NSAllowContinuousSpellChecking' => false,
+    'NSAutomaticCapitalizationEnabled' => false,
+    'NSAutomaticPeriodSubstitutionEnabled' => false,
+    'NSAutomaticSpellingCorrectionEnabled' => false,
+    'WebAutomaticSpellingCorrectionEnabled' => false
   }
 }
 
