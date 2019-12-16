@@ -13,6 +13,7 @@ default[:base][:safari][:plist_settings] = {
     'NewWindowBehavior' => 4,
     'PreloadTopHit' => false,
     'ShowFullURLInSmartSearchField' => true,
+    'ShowIconsInTabs' => true,
     'TabCreationPolicy' => 2
   }
 }
