@@ -38,34 +38,9 @@ default[:base][:network_storage][:plist_settings] = {
   }
 }
 
-default[:base][:trackpad_builtin][:plist_settings] = {
+default[:base][:trackpad][:plist_settings] = {
   domain: 'com.apple.AppleMultitouchTrackpad',
   settings: {
-    'Clicking' => true,
-    'Dragging' => 0,
-    'DragLock' => 0,
-    'TrackpadCornerSecondaryClick' => 0,
-    'TrackpadFiveFingerPinchGesture' => 2,
-    'TrackpadFourFingerHorizSwipeGesture' => 2,
-    'TrackpadFourFingerPinchGesture' => 2,
-    'TrackpadFourFingerVertSwipeGesture' => 2,
-    'TrackpadHorizScroll' => 1,
-    'TrackpadMomentumScroll' => true,
-    'TrackpadPinch' => 1,
-    'TrackpadRightClick' => true,
-    'TrackpadRotate' => 1,
-    'TrackpadScroll' => true,
-    'TrackpadThreeFingerDrag' => false,
-    'TrackpadThreeFingerHorizSwipeGesture' => 0,
-    'TrackpadThreeFingerTapGesture' => 2,
-    'TrackpadThreeFingerVertSwipeGesture' => 0,
-    'TrackpadTwoFingerDoubleTapGesture' => 1,
-    'TrackpadTwoFingerFromRightEdgeSwipeGesture' => 3,
-    'UserPreferences' => true
+    'Clicking' => true
   }
-}
-
-default[:base][:trackpad_external][:plist_settings] = {
-  domain: 'com.apple.driver.AppleBluetoothMultitouch.trackpad',
-  settings: node[:base][:trackpad_builtin][:plist_settings][:settings]
 }
