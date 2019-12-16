@@ -6,6 +6,7 @@ default[:base][:global_domain][:plist_settings] = {
   domain: '.GlobalPreferences',
   settings: {
     'AppleInterfaceStyle' => 'Dark',
+    'AppleKeyboardUIMode' => 2,
     'com.apple.sound.beep.feedback' => 1,
     'KeyRepeat' => 2,
     'InitialKeyRepeat' => 15,
