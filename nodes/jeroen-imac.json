@@ -3,7 +3,7 @@
     "role[default]"
   ],
   "base": {
-    "hostname": "Elephant",
+    "hostname": "jeroen-imac",
     "system": {
       "restart_power_failure": true
     }
