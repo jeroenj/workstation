@@ -54,9 +54,3 @@ file "#{ENV['HOME']}/.ruby-version" do
   owner node[:base][:username]
   group node[:base][:group]
 end
-
-template "#{ENV['HOME']}/.powconfig" do
-  source 'ruby/powconfig'
-  owner node[:base][:username]
-  group node[:base][:group]
-end
