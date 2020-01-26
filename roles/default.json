@@ -82,6 +82,7 @@
         "fzf",
         "git",
         "helm",
+        "helm@2",
         "htop",
         "httpie",
         "icdiff",
