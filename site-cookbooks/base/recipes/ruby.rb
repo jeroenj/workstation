@@ -29,13 +29,6 @@ node[:base][:ruby][:rubies].each do |ruby|
 
   gem_exec = "source /usr/local/opt/chruby/share/chruby/chruby.sh && RUBIES=(#{path}) && chruby #{ruby} && #{::File.join(path, 'bin/gem')}"
 
-  execute "Install rubygems #{node[:base][:ruby][:rubygems_version]} on ruby #{ruby}" do
-    command "#{gem_exec} update --system #{node[:base][:ruby][:rubygems_version]}"
-    user node[:base][:username]
-    group node[:base][:group]
-    not_if { system({ 'UID' => node[:base][:uid], 'GEM_PATH' => '' }, "#{gem_exec} --version | grep #{node[:base][:ruby][:rubygems_version]}") }
-  end
-
   node[:base][:ruby][:gems].each do |ruby_gem|
     version = " --version '#{ruby_gem[:version]}'" if ruby_gem[:version]
     description_version = " #{ruby_gem[:version]}" if ruby_gem[:version]

@@ -15,6 +15,5 @@ default[:base][:ruby] = {
     { name: 'foreman' },
     { name: 'pry', version: '~> 0.12.2' },
     { name: 'rubocop', version: '~> 0.48.1' }
-  ],
-  rubygems_version: '2.7.8'
+  ]
 }
