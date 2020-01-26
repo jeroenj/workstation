@@ -106,6 +106,7 @@
         "rename",
         "rsync",
         "shellcheck",
+        "stern",
         "termshark",
         "terraform",
         "tig",
