@@ -17,4 +17,4 @@ GRAPH
     reattach-to-user-namespace (~> 0.2)
   macos (3.2.0)
   reattach-to-user-namespace (0.3.1)
-  vagrant (2.0.0)
+  vagrant (2.0.1)
