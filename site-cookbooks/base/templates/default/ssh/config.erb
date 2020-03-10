@@ -6,18 +6,18 @@ Host *
   ServerAliveInterval 60
   ServerAliveCountMax 5
 
-Host *.openminds.be
-User root
+Host *.x-plose.be,*.x-plose.cloud
+  User root
 
-Host *.x-plose.be
-User root
+Host *.getsilverfin.com,*.silverfin.com
+  User root
 
 <% node[:base][:ssh][:hosts].each do |host| %>
 Host <%= host[:host] %>
-User <%= host[:user] %>
-HostName <%= host[:host_name] %>
+  User <%= host[:user] %>
+  HostName <%= host[:host_name] %>
 <% if host[:port] %>
-Port <%= host[:port] %>
+  Port <%= host[:port] %>
 <% end %>
 
 <% end %>
