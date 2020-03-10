@@ -1,7 +1,6 @@
 Host *
   AddKeysToAgent yes
   UseKeychain yes
-  ForwardAgent yes
   KeepAlive yes
   ServerAliveInterval 60
   ServerAliveCountMax 5
@@ -21,3 +20,5 @@ Host <%= host[:host] %>
 <% end %>
 
 <% end %>
+Match Host *.srvd.be,*.jeroenj.be
+  ForwardAgent yes
