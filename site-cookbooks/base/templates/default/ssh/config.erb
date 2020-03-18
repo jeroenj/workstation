@@ -5,10 +5,10 @@ Host *
   ServerAliveInterval 60
   ServerAliveCountMax 5
 
-Host *.x-plose.be,*.x-plose.cloud
+Match Host *.x-plose.be,*.x-plose.cloud
   User root
 
-Host *.getsilverfin.com,*.silverfin.com
+Match Host *.getsilverfin.com,*.silverfin.com
   User root
 
 <% node[:base][:ssh][:hosts].each do |host| %>
