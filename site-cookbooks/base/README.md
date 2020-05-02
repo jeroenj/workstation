@@ -4,13 +4,7 @@ This cookbook includes all base recipes for my workstations.
 
 ## Requirements
 
-This cookbook has been built to work on Mac OS X and is only tested on El Capitan (10.11). Xcode (Development Tools) need to be installed upfront.
-
-### gems
-* plist
-
-### cookbooks
-- `homebrew`
+This cookbook has been built to work on macOS and is only tested on Catalina (10.15). Xcode (Development Tools) need to be installed upfront.
 
 Attributes
 ----------
@@ -32,12 +26,6 @@ Attributes
     <td><tt>[:base][:hostname]</tt></td>
     <td>String</td>
     <td>The hostname for the machine you're setting up</td>
-    <td><tt>nil</tt></td>
-  </tr>
-  <tr>
-    <td><tt>[:base][:homebrew][:packages]</tt></td>
-    <td>Array</td>
-    <td></td>
     <td><tt>nil</tt></td>
   </tr>
 </table>
