@@ -36,7 +36,6 @@
     "recipe[base::itunes]",
     "recipe[base::jubler]",
     "recipe[base::keynote]",
-    "recipe[base::logitech_harmony]",
     "recipe[base::logrotate]",
     "recipe[base::mail]",
     "recipe[base::numbers]",
