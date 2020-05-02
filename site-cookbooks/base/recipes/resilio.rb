@@ -1,5 +1,3 @@
-homebrew_cask 'resilio-sync'
-
 node[:base][:resilio][:sync_directories].each do |name, dir|
   base_recursive_directory dir[:path] do
     owner node[:base][:username]

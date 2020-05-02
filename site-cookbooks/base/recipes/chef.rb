@@ -1,5 +1,3 @@
-homebrew_cask 'chefdk'
-
 environments_path = "#{ENV['HOME']}/.chef/environments"
 
 base_recursive_directory "#{ENV['HOME']}/.chef/environments" do

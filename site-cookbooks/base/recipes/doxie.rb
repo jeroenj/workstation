@@ -1,5 +1,3 @@
-homebrew_cask 'doxie'
-
 preferences_directory = "#{ENV['HOME']}/Library/Preferences/Apparent/Doxie"
 
 base_recursive_directory preferences_directory do

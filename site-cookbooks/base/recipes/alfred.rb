@@ -1,5 +1,3 @@
-homebrew_cask 'alfred'
-
 base_plist_settings 'alfred'
 
 if node[:base][:alfred][:license][:code]

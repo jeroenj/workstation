@@ -1,20 +1,7 @@
 DEPENDENCIES
-  homebrew (= 5.0.8)
-  mac-app-store
-    git: https://github.com/jeroenj/mac-app-store-chef.git
-    revision: 8e22418ee6f8b5f5afee69de60ccdf24612b091b
-    branch: homebrew-update-chef-12
   macos
-  reattach-to-user-namespace
-    git: https://github.com/jeroenj/reattach-to-user-namespace-chef.git
-    revision: 57d1ba0e7c4ea90064769a64aafa742c6f7cd7fc
-    branch: homebrew-update-chef-12
   vagrant
 
 GRAPH
-  homebrew (5.0.8)
-  mac-app-store (3.1.1)
-    reattach-to-user-namespace (~> 0.2)
   macos (3.2.1)
-  reattach-to-user-namespace (0.3.1)
   vagrant (2.0.1)

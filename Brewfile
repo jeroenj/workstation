@@ -1,7 +1,6 @@
 tap 'chef/chef'
 tap 'derailed/k9s'
 tap 'homebrew/cask'
-tap 'homebrew/cask-drivers'
 
 brew 'ack'
 brew 'ag'
@@ -62,6 +61,9 @@ brew 'whois'
 brew 'wireshark'
 brew 'youtube-dl'
 brew 'zsh'
+
+cask 'https://gist.githubusercontent.com/jeroenj/4fe05d859b560581983081f414e52f60/raw/672e138000e160c7bb3005f4cf92bc37b4e16c1e/chefdk.rb'
+cask 'https://gist.githubusercontent.com/jeroenj/49c7925085e318711fe035c1748def0b/raw/376314fee41bb1dfd4102fa430b5dbf1844d40e5/eid-be.rb'
 
 cask '1password'
 cask 'alfred'

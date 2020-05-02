@@ -1,5 +1,3 @@
-homebrew_cask 'dash'
-
 base_plist_settings 'dash'
 
 node.default[:base][:dash_license][:plist_settings] = {
