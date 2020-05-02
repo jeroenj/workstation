@@ -28,7 +28,6 @@
     "recipe[base::itunes]",
     "recipe[base::logrotate]",
     "recipe[base::mail]",
-    "recipe[base::node]",
     "recipe[base::resilio]",
     "recipe[base::safari]",
     "recipe[base::screencapture]",
