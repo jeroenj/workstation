@@ -14,7 +14,6 @@
     "recipe[base::airport]",
     "recipe[base::do_dyndns]",
     "recipe[base::hostname]",
-    "recipe[reattach-to-user-namespace]",
 
     "recipe[base::1password]",
     "recipe[base::ack]",
