@@ -3,12 +3,6 @@ directory "#{ENV['HOME']}/.ssh" do
   group node[:base][:group]
 end
 
-template "#{ENV['HOME']}/.ssh/config" do
-  source 'ssh/config.erb'
-  owner node[:base][:username]
-  group node[:base][:group]
-end
-
 private_key = node[:base][:ssh][:private_key]
 public_key = node[:base][:ssh][:public_key]
 authorized_keys = node[:base][:ssh][:authorized_keys]
