@@ -17,7 +17,6 @@
     "recipe[base::alfred]",
     "recipe[base::appcleaner]",
     "recipe[base::calendar]",
-    "recipe[base::chef]",
     "recipe[base::clock]",
     "recipe[base::dash]",
     "recipe[base::divvy]",
