@@ -36,6 +36,7 @@ brew 'mp4v2'
 brew 'ncdu'
 brew 'gnu-sed'
 brew 'mitmproxy'
+brew 'mtr'
 brew 'neovim'
 brew 'nmap'
 brew 'node', link: false
