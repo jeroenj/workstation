@@ -9,7 +9,6 @@
     "recipe[base::ruby]",
 
     "recipe[base::airport]",
-    "recipe[base::do_dyndns]",
     "recipe[base::hostname]",
 
     "recipe[base::1password]",
