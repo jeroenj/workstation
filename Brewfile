@@ -64,6 +64,7 @@ brew 'watch'
 brew 'wget'
 brew 'whois'
 brew 'wireshark'
+brew 'yq'
 brew 'youtube-dl'
 brew 'zsh'
 
