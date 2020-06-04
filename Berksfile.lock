@@ -4,4 +4,4 @@ DEPENDENCIES
 
 GRAPH
   macos (3.2.1)
-  vagrant (2.0.1)
+  vagrant (2.0.2)
