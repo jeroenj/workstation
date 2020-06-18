@@ -17,8 +17,7 @@ brew 'fzf'
 brew 'gawk'
 brew 'git'
 brew 'gpg'
-brew 'helm', link: false
-brew 'helm@2', link: true
+brew 'helm'
 brew 'htop'
 brew 'httpie'
 brew 'icdiff'
