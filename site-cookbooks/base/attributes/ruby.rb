@@ -8,6 +8,6 @@ default[:base][:ruby] = {
   default: '2.6.5',
   gems: [
     { name: 'foreman' },
-    { name: 'pry', version: '~> 0.12.2' },
+    { name: 'pry', version: '~> 0.13.1' },
   ]
 }
