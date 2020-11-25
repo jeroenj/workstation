@@ -32,19 +32,11 @@
     "recipe[base::screencapture]",
     "recipe[base::screensaver]",
     "recipe[base::terminal]",
-    "recipe[base::user_aliases]",
-    "recipe[base::vagrant]"
+    "recipe[base::user_aliases]"
   ],
   "default_attributes": {
     "base": {
       "username": "jeroen"
-    },
-    "vagrant": {
-      "plugins": [
-        "vagrant-berkshelf",
-        "vagrant-bindfs",
-        "vagrant-omnibus"
-      ]
     }
   },
   "chef_type": "role",

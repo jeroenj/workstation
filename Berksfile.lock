@@ -1,7 +1,5 @@
 DEPENDENCIES
   macos
-  vagrant
 
 GRAPH
   macos (3.4.0)
-  vagrant (2.0.3)
