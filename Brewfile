@@ -91,7 +91,7 @@ cask 'tunnelblick'
 cask 'typora'
 cask 'vlc'
 cask 'xquartz'
-cask 'zoomus'
+cask 'zoom'
 
 mas 'Divvy', id: 413857545
 mas 'Ghostery Lite', id: 1436953057
