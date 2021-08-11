@@ -5,7 +5,7 @@
 
     "recipe[base::system]",
     "recipe[base::ssh]",
-    "recipe[base::prezto]",
+    "recipe[base::zsh]",
     "recipe[base::ruby]",
 
     "recipe[base::airport]",
