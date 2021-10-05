@@ -84,7 +84,6 @@ cask 'vlc'
 cask 'xquartz'
 cask 'zoom'
 
-mas 'Divvy', id: 413857545
 mas 'Ghostery Lite', id: 1436953057
 mas 'Harvest', id: 506189836
 mas 'Keynote', id: 409183694

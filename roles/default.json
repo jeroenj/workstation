@@ -17,7 +17,6 @@
     "recipe[base::appcleaner]",
     "recipe[base::calendar]",
     "recipe[base::clock]",
-    "recipe[base::divvy]",
     "recipe[base::dock]",
     "recipe[base::dodyndns]",
     "recipe[base::finder]",

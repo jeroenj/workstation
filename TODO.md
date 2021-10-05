@@ -154,10 +154,6 @@ default[:mac_os_x][:settings][:'1password_extension'] = {
 * ln -s ~/.config/broot/conf.toml ~/Library/Preferences/org.dystroy.broot/conf.toml
 * https://github.com/Canop/broot/issues/103
 
-### Divvy
-* Set "Enable access for assistive devices" in Universal Access in System Preferences
-* Shortcuts: http://mizage.clarify-it.com/d/nxr9qg
-
 ### Google Chrome
 * Preferences
 
