@@ -66,7 +66,6 @@ cask 'https://gist.githubusercontent.com/jeroenj/49c7925085e318711fe035c1748def0
 cask '1password'
 cask 'alfred'
 cask 'appcleaner'
-cask 'dash'
 cask 'docker'
 cask 'doxie'
 cask 'firefox'
