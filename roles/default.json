@@ -20,7 +20,6 @@
     "recipe[base::divvy]",
     "recipe[base::dock]",
     "recipe[base::dodyndns]",
-    "recipe[base::doxie]",
     "recipe[base::finder]",
     "recipe[base::firewall]",
     "recipe[base::itunes]",
