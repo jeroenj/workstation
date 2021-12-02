@@ -1,5 +1,4 @@
 tap 'chef/chef'
-tap 'derailed/k9s'
 tap 'homebrew/cask'
 
 brew 'ack'
@@ -24,7 +23,6 @@ brew 'icdiff'
 brew 'ipcalc'
 brew 'iperf3'
 brew 'jid'
-brew 'k9s'
 brew 'jq'
 brew 'kubectx'
 brew 'kubernetes-cli'
