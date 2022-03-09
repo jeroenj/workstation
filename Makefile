@@ -27,6 +27,10 @@ set-dotfiles-private:
 		GIT_DIR=~/.dotfiles-private GIT_WORK_TREE=~ git checkout . \
 	)
 
+install-homebrew:
+	sudo --validate
+	curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh | bash
+
 brew-bundle:
 	brew bundle install --no-upgrade --no-lock
 
