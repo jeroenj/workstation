@@ -1,0 +1,22 @@
+{
+  "run_list": [
+    "role[default]"
+  ],
+  "base": {
+    "hostname": "jeroen-air",
+    "clock": {
+      "plist_settings": {
+        "settings": {
+          "tilesize": 40
+        }
+      }
+    },
+    "screensaver": {
+      "plist_settings": {
+        "settings": {
+          "askForPasswordDelay": 5
+        }
+      }
+    }
+  }
+}
