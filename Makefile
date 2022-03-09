@@ -27,7 +27,7 @@ set-dotfiles-private:
 		GIT_DIR=~/.dotfiles-private GIT_WORK_TREE=~ git checkout . \
 	)
 
-brew:
+brew-bundle:
 	brew bundle install --no-upgrade --no-lock
 
 chef:
