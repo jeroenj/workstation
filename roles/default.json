@@ -5,7 +5,6 @@
 
     "recipe[base::system]",
     "recipe[base::ssh]",
-    "recipe[base::zsh]",
     "recipe[base::ruby]",
 
     "recipe[base::airport]",
