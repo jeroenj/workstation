@@ -2,4 +2,4 @@ DEPENDENCIES
   macos
 
 GRAPH
-  macos (3.4.0)
+  macos (4.2.2)
