@@ -1,13 +1,12 @@
 # TODO
 
 ## Settings
-* move from `node[:base][:settings]` to `base_plist_settings`
-* remove `mac_os_x` cookbook
+* Alllow "Full Disk Access" (Security & Privacy) for Terminal.app and iTerm.app
+* rename `base_plist_settings` to `base_settings`
+* add support for dictionaries
 
 ## System
-
 * create `/Users/jeroen/Library/LaunchAgents/`
-* Show Volume and BlueTooth icons
 
 ### Accessibility
 * Zoom settings
@@ -16,9 +15,6 @@
 * Only restart Dock if actual changes happened in Dock settings
 
 ### Firewall
-
-### Language & Region
-* Advanced: change separators to spaces for groupping and `.` for decimals
 
 ### Screensaver
 * `'idleTime' => 300`
@@ -30,17 +26,9 @@
   'type': 0`
 ```
 
-### Siri
-* languages
-* remove icon from menu bar and dock
-
-### Keyboard
-* Disable autocorrect
-
 ### Keyboard Shortcuts
-Set as `NSUserKeyEquivalents` in app settings?
-
-* Disable F11/F12
+* Set as `NSUserKeyEquivalents` in app settings?
+* Map Tabs lock to escape
 * Disable ^ up/down
 * Enable ^1 to switch to desktop 1
 * Disable spotlight shortcuts
@@ -50,46 +38,32 @@ Set as `NSUserKeyEquivalents` in app settings?
 
 ### Preferences
 * Click in the scrollbar to: Jump to the spot that's clicked
-* OSX Dark theme
 * Show bluetooth icon
 * Show speaker icon
 * Show battery percentage
-* Enable screen sharing
-* Require password after 15 minutes of sleep
-
-### Ruby
-* Make it possible to use gem_package when running a ruby managed by chruby: https://github.com/Atalanta/chef-chruby/issues/5#issuecomment-23155795
+* Require password after 15 minutes of sleep # TODO: always on laptop
+* Disable "Automatically rearange space on most recent use"
+* Disable "Automatically adjust brightness"
 
 ### Services
 * Screen sharing
 
 ## System apps
 
-### Calendar
-* Hide new events count in Dock
-* Don't include Mail.app events
-
 ### Contacts
 * Sorting
+* Hide groups
 
 ### Finder
 * Only restart Finder if actual changes happened in Finder settings
+* Hide Tags
 
-### Image Capture
-* Connecting an iPhone does not open any apps
-
-### iTunes
+### Music
 * All settings
-* Disable song notifications
-* Show status bar
 
 ### Mail
-* `'DefaultViewState': {'FavoritesBarVisible' => false}`
-* Enable rules
-* Signatures
 * Inbox notifications: VIP Inbox
 * Dock count: VIP Inbox
-* Customize toolbar
 
 ### Safari
 * Extensions
@@ -97,82 +71,19 @@ Set as `NSUserKeyEquivalents` in app settings?
 
 ### Terminal
 * Preferences
-* ALT + backspace
 
 ## Third party apps
 
-### Adobe Reader
-* Create recipe
-* disable updates
-* do not set as default reader
-* Remove browser plugin
-  * rm /Library/Internet Plug-Ins/AdobePDFViewer.plugin
-  * rm /Library/Internet Plug-Ins/AdobePDFViewerNPAPI.plugin
-
-### AppCleaner
-* SmartDelete
-
-## broot
-* ln -s ~/.config/broot/conf.toml ~/Library/Preferences/org.dystroy.broot/conf.toml
-* https://github.com/Canop/broot/issues/103
-
-### Google Chrome
-* Preferences
+### Moom
+* preferences?
 
 ### Reeder
-* `"#{ENV['HOME']}/Library/Containers/com.reederapp.rkit2.mac/Data/Library/Preferences/com.reederapp.rkit2.mac.plist"`
+* `"#{ENV['HOME']}/Library/Containers/com.reederapp.macOS/Data/Library/Preferences/com.reederapp.macOS.plist"`
 * All preferences (they are all dictionaries)
 
-### Spotify
-* Disable launch on login
-
-### TeamViewer
-* Preferences
-```ruby
-mac_os_x_userdefaults 'com.teamviewer.teamviewer' do
-  key 'Always_Online'
-  value 0
-end
-
-%w[teamviewer teamviwer_desktop].each do |type|
-  plist = "/Library/LaunchAgents/com.teamviewer.#{type}.plist"
-
-  # execute "Unload #{plist}" do
-  #   command "sudo launchctl unload #{plist}"
-  #   ignore_failure true
-  # end
-
-  mac_os_x_userdefaults plist do
-    key 'Disabled'
-    value true
-    sudo true
-  end
-end
-```
-
-### Tunnelblick
-* Preferences
-* Configs
-
-## Various
-* Notification settings
-
-* Audio Hijack Pro
-* Color Picker Pro
-* Fission
-* Sketch
-
-* Pixelmator
-* Renamer
-* Skitch
-* The Unarchiver
-
-* TextEdit
-* Time Machine
-
-* Fonts
-
-## Chef
-* Debug timeout issues. Currently the timeout is set to 10 minutes, but sometimes compiling a package exeeds that time.
-* Debug why installing a lot of packages after each other takes such a long time. Note: during that time Dropbox was syncing and using 100% CPU.
-* create keychain lwrp instead of doing custom calls. This way STDOUT output can easily be ignored and we could to ask to unlock the keychain if it is locked instead of always doing that.
+### Zoom
+* preferences:
+  * disable enter full screen automatically
+  * automatically join audio
+  * mute mic
+  * turn of video when joining
