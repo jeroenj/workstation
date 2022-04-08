@@ -10,7 +10,6 @@
     "recipe[base::hostname]",
 
     "recipe[base::1password]",
-    "recipe[base::ack]",
     "recipe[base::alfred]",
     "recipe[base::appcleaner]",
     "recipe[base::calendar]",
