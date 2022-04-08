@@ -26,8 +26,7 @@
     "recipe[base::safari]",
     "recipe[base::screencapture]",
     "recipe[base::screensaver]",
-    "recipe[base::terminal]",
-    "recipe[base::user_aliases]"
+    "recipe[base::terminal]"
   ],
   "default_attributes": {
     "base": {
