@@ -8,14 +8,14 @@ public_key = node[:base][:ssh][:public_key]
 authorized_keys = node[:base][:ssh][:authorized_keys]
 
 if private_key && public_key
-  file "#{ENV['HOME']}/.ssh/id_rsa" do
+  file "#{ENV['HOME']}/.ssh/id_ed25519" do
     content private_key
     mode 00600
     owner node[:base][:username]
     group node[:base][:group]
   end
 
-  file "#{ENV['HOME']}/.ssh/id_rsa.pub" do
+  file "#{ENV['HOME']}/.ssh/id_ed25519.pub" do
     content public_key
     mode 00644
     owner node[:base][:username]
